@@ -1,0 +1,71 @@
+.work
+  background: $blue url(../img/line-blue.svg) no-repeat top right
+  background-position-y: -10px
+  padding-top: 120px
+  padding-bottom: 130px
+  h2
+    @include h2-title
+    margin-bottom: 60px
+    img
+      position: absolute
+      margin-left: 30px
+  &_block
+    display: flex
+    flex-direction: row
+    &-item
+      width: 470px
+      height: 500px
+      background-color: $white
+      padding: 76px 70px 0
+      //justify-content: center
+      align-items: center
+      display: flex
+      flex-direction: column
+      text-align: center
+      &:first-child
+        margin-right: 37px
+        span
+          max-width: 175px
+      &:nth-child(2)
+        padding: 76px 90px 0
+      h4
+        @include font-family-Montserrat
+        font-size: 18px
+        @include bold
+        line-height: 1.2
+        letter-spacing: 1.08px
+        color: $black-title
+        text-transform: uppercase
+        padding-bottom: 15px
+        margin-top: 40px
+      span
+        @include font-family-Roboto
+        font-size: 13px
+        line-height: 1.5
+        letter-spacing: 0.26px
+        color: $bg
+        padding-bottom: 20px
+        max-width: 300px
+      p
+        @include font-family-Helvetica
+        font-size: 14px
+        line-height: 1.7
+        letter-spacing: 0.28px
+        color: $bg
+        padding-bottom: 25px
+        position: relative
+        &::after
+          content: ''
+          position: absolute
+          width: 50px
+          height: 2px
+          background-color: #e0e6ea
+          top: 58px
+          transform: translateX(-50%)
+          left: 50%
+        &:last-child
+          &::after
+            display: none
+
+
+

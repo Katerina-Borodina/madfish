@@ -1,0 +1,73 @@
+.header
+  padding: 30px 0
+  background: $bg url(../img/bg-header.svg) no-repeat center
+  &_top
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &_right
+    &-link
+      text-transform: uppercase
+      color: $white
+      @include font-family-Montserrat
+      font-size: 14px
+      @include semi-bold
+      line-height: 1.4
+      letter-spacing: 1.12px
+      margin-right: 40px
+    &-btn
+      background-color: transparent
+      border: none
+      margin: 0
+      padding: 0
+  &_bottom
+    height: 275px
+    &-text
+      position: relative
+      height: 385px
+      top: -110px
+      p
+        text-transform: uppercase
+        color: $green
+        margin-bottom: 25px
+      h1
+        color: $white
+        @include bold
+        @include font-family-Montserrat
+        font-size: 82px
+        position: relative
+        max-width: 750px
+        span
+          color: $black-title
+          padding-top: 20px
+          display: inline-block
+        img
+          position: absolute
+          bottom: -4px
+          right: -145px
+      .scroll
+        @include font-family-Montserrat
+        @include semi-bold
+        text-transform: uppercase
+        color: $bg
+        font-size: 14px
+        position: relative
+        transform: rotate(-90deg)
+        &::before
+          content: ''
+          position: absolute
+          width: 40px
+          height: 2px
+          background-color: $green
+          top: 50%
+          transform: translateY(-50%)
+          left: -60px
+        &_block
+          display: flex
+          justify-content: center
+          margin-top: 60px
+
+
+
+
+

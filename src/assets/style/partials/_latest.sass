@@ -1,0 +1,30 @@
+.latest
+  background-color: $white
+  margin-left: 10%
+  margin-top: 150px
+  margin-bottom: 130px
+  width: 90%
+  &_slider
+    width: 60%
+    float: right
+    &-item
+      width: 380px
+      height: 600px
+      background-color: $blue
+      //display: block
+    &-text
+      max-width: 400px
+      width: 30%
+      float: left
+      h2
+        @include h2-title
+
+        img
+          padding-top: 15px
+      p
+        @include font-family-Montserrat
+        @include medium
+        margin-top: 30px
+        line-height: 1.6
+        letter-spacing: 0.96px
+        color: $black
