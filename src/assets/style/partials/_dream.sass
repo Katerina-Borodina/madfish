@@ -1,0 +1,55 @@
+.dream
+  background: $blue url(../img/line-blue.svg) no-repeat top left
+  background-position-y: -10px
+  background-position-x: -100px
+  padding-top: 160px
+  padding-bottom: 120px
+  h2
+    @include h2-title
+    max-width: 570px
+  &_block
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row-reverse
+    &-item
+      width: 344px
+      height: auto
+      margin-bottom: 54px
+      position: relative
+      padding: 0
+      &:nth-child(3n+1)
+        transform: translateY(-70px)
+      &:nth-child(3n+2)
+        transform: translateY(-10px)
+      &:nth-child(3n+3)
+        transform: translateY(172px)
+      .item_img
+        height: auto
+        img
+          max-width: 100%
+          object-fit: cover
+      .item_plash
+        width: 230px
+        height: 100px
+        background-color: $green
+        position: absolute
+        bottom: -25px
+        right: 21px
+        padding-top: 25px
+        padding-left: 38px
+        p
+          @include font-family-Montserrat
+          font-size: 24px
+          @include bold
+          line-height: 1.2
+          letter-spacing: 0.48px
+          color: $white
+          margin-bottom: 5px
+        span
+          @include font-family-Montserrat
+          @include semi-bold
+          font-size: 14px
+          line-height: 1.2
+          letter-spacing: 0.84px
+          color: $white
+          text-transform: uppercase

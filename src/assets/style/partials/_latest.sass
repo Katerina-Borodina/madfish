@@ -4,20 +4,48 @@
   margin-top: 150px
   margin-bottom: 130px
   width: 90%
+  height: 600px
   &_slider
-    width: 60%
+    width: 790px
     float: right
     &-item
-      width: 380px
-      height: 600px
       background-color: $blue
-      //display: block
+      padding: 57px 0 0 45px
+      position: relative
+      .span-title
+        @include font-family-Montserrat
+        font-size: 14px
+        @include bold
+        line-height: 1.2
+        letter-spacing: 0.84px
+        color: #969ba1
+        padding-left: 10px
+        padding-bottom: 90px
+        display: inline-block
+      .span-desc
+        @include font-family-Montserrat
+        font-size: 26px
+        @include bold
+        line-height: 1.5
+        color: $bg
+        max-width: 230px
+        display: inline-block
+        margin-bottom: 75px
+      img
+        padding-bottom: 35px
+      button
+        display: block
+        background-color: transparent
+        border: none
+        position: absolute
+        right: 60px
     &-text
-      max-width: 400px
-      width: 30%
+      width: 40%
       float: left
+      margin-top: 95px
       h2
         @include h2-title
+        max-width: 400px
 
         img
           padding-top: 15px
@@ -28,3 +56,4 @@
         line-height: 1.6
         letter-spacing: 0.96px
         color: $black
+        max-width: 400px

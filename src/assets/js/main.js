@@ -5,9 +5,21 @@ function mainPageTopSlider() {
         arrows: true,
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 2
-        // prevArrow: '<div class="arrow-slider arrow-slider_left"></div>',
-        // nextArrow: '<div class="arrow-slider arrow-slider_right"></div>'
+        slidesToScroll: 2,
+        prevArrow: '<div class="arrow-slider arrow-slider_left"></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right"></div>'
+    });
+}
+
+function mainPageBottomSlider() {
+    $('.blog_slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: '<div class="arrow-slider arrow-slider_left-blog"></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right-blog"></div>'
     });
 }
 
@@ -574,7 +586,7 @@ $(document).ready(function () {
 
     if (BODY.hasClass('main-page')) {
         mainPageTopSlider();
-        // mainPageBottomSlider();
+        mainPageBottomSlider();
         // MainPageFormReservation();
         // MainPageVideo();
         // MainPageAccordion();

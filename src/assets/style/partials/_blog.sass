@@ -1,0 +1,44 @@
+.blog
+  background: $bg url(../img/bg-header.svg) no-repeat center
+  background-position-x: -290px
+  background-position-y: -10px
+  padding-top: 130px
+  //padding-left: 10%
+  padding-bottom: 140px
+  h2
+    @include h2-title
+    margin-bottom: 65px
+    padding-left: 10%
+  &_slider
+    padding-left: 10%
+    &-item
+      .item_title
+        @include font-family-Montserrat
+        font-size: 22px
+        @include bold
+        line-height: 1.5
+        letter-spacing: 0.44px
+        color: $white
+        max-width: 380px
+        margin-top: 18px
+      .item_bottom
+        color: $white
+        display: flex
+        margin-top: 10px
+        position: relative
+        img
+          width: 30px
+          height: 30px
+          border-radius: 100%
+          object-fit: cover
+          margin-right: 12px
+      .item_name
+        @include font-family-Helvetica
+        font-size: 16px
+        line-height: 1.63
+        letter-spacing: 0.3px
+      .item_date
+        @include font-family-Helvetica
+        font-size: 16px
+        position: absolute
+        right: 0
