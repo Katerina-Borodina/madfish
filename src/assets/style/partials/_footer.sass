@@ -1,1 +1,51 @@
 .footer
+  background-color: $bg
+  padding-top: 72px
+  padding-bottom: 93px
+  color: $white
+  &_logo
+    margin-bottom: 35px
+  &_desc
+    @include font-family-Helvetica
+    font-size: 14px
+    letter-spacing: 0.91px
+  &_group
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    div
+      margin-right: 70px
+      &:last-child
+        margin-right: 0
+  &_location
+    @include font-family-Helvetica
+    font-size: 16px
+    @include bold
+    letter-spacing: 0.91px
+    margin-bottom: 27px
+  &_str, &_tell
+    @include font-family-Helvetica
+    font-size: 14px
+    line-height: 1.49
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+  &_social
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &-group
+      margin-bottom: 25px
+      a
+        display: inline-block
+        margin-right: 25px
+        &:last-child
+          margin-right: 0
+        img
+          
+  &_mail
+    @include font-family-Helvetica
+    font-size: 16px
+    letter-spacing: 0.91px
+    color: $white
+
