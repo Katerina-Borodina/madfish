@@ -4,6 +4,7 @@
   padding-bottom: 93px
   color: $white
   &_logo
+    display: inline-block
     margin-bottom: 35px
   &_desc
     @include font-family-Helvetica
@@ -39,10 +40,19 @@
       a
         display: inline-block
         margin-right: 25px
+        transition: .4s
         &:last-child
           margin-right: 0
-        img
-          
+        svg
+          path
+            fill: $white
+            transition: .4s
+        &:hover
+          svg
+            path
+              fill: $green
+              transition: .4s
+
   &_mail
     @include font-family-Helvetica
     font-size: 16px

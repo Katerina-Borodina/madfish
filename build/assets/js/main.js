@@ -1,4 +1,3 @@
-
 function mainPageTopSlider() {
     $('.latest_slider').slick({
         dots: false,
@@ -20,6 +19,34 @@ function mainPageBottomSlider() {
         slidesToScroll: 1,
         prevArrow: '<div class="arrow-slider arrow-slider_left-blog"></div>',
         nextArrow: '<div class="arrow-slider arrow-slider_right-blog"></div>'
+    });
+}
+
+function navMunu() {
+    let menu_mob = $(".menu_nav");
+    $(".header_right-btn").on('click', () => {
+        menu_mob.css("display", "block").css("right", 0).removeClass('menu-close').addClass('menu-open');
+        $('thml').css("overflow", 'hidden');
+        $('body').css("overflow", 'hidden');
+        // $(".wrap").css("z-index", "1");
+        // $(".menu_nav").css("z-index", "100");
+    });
+
+    $(".menu_nav-close").on('click', () => {
+        menu_mob.css("right", '-100%').removeClass('menu-open').addClass('menu-close');
+        setTimeout(function () {
+            menu_mob.css("display", "none")
+        }, 600);
+        $('thml').css("overflow", 'auto');
+        $('body').css("overflow", 'auto');
+    });
+}
+
+function mainPageScrollToBlock() {
+    $(".js-scroll-to-id-block").on('click', function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#this-block-id-to-scroll").offset().top
+        }, 1000);
     });
 }
 
@@ -59,13 +86,7 @@ function mainPageBottomSlider() {
 //     });
 // }
 //
-// function restaurantPageScrollToBlock() {
-//     $(".js-scroll-to-id-block").on('click', function () {
-//         $([document.documentElement, document.body]).animate({
-//             scrollTop: $("#this-block-id-to-scroll").offset().top
-//         }, 1000);
-//     });
-// }
+
 //
 // function roomsPageScrollToBlock() {
 //     $(".js-scroll-to-block-1").on('click', function () {
@@ -562,31 +583,16 @@ function mainPageBottomSlider() {
 //     });
 // }
 //
-// function navMunuMob() {
-//     let menu_mob = $(".menu_mob");
-//     $(".header_nav-mob_btn").click(function () {
-//         menu_mob.css("display", "block").css("left", 0).removeClass('menu-close').addClass('menu-open');
-//         $('thml').css("overflow", 'hidden');
-//         $('body').css("overflow", 'hidden');
-//     });
-//
-//     $(".menu_mob-header_close").click(function () {
-//         menu_mob.css("left", '100%').removeClass('menu-open').addClass('menu-close');
-//         setTimeout(function () {
-//             menu_mob.css("display", "none")
-//         }, 600);
-//         $('thml').css("overflow", 'auto');
-//         $('body').css("overflow", 'auto');
-//     });
-// }
+
 
 $(document).ready(function () {
     const BODY = $('body');
-    // navMunuMob();
+    navMunu();
 
     if (BODY.hasClass('main-page')) {
         mainPageTopSlider();
         mainPageBottomSlider();
+        mainPageScrollToBlock();
         // MainPageFormReservation();
         // MainPageVideo();
         // MainPageAccordion();
