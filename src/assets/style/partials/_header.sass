@@ -1,10 +1,33 @@
+.main-page
+  .header
+    min-height: 460px
+    @media screen and (max-width: $width-container)
+      background-position-x: 70%
+      min-height: 50vh
+      max-height: 460px
+
 .header
   padding: 30px 0
   background: $bg url(../img/bg-header.svg) no-repeat center
+  @media screen and (max-width: $width-container)
+    background-position-x: 70%
+    min-height: 100vh
+    max-height: 100vh
+
+  &_left
+    width: 67px
+    height: 33px
+    img
+      width: 100%
+      height: 100%
+      object-fit: contain
+      z-index: 9
+
   &_top
     display: flex
     flex-direction: row
     justify-content: space-between
+
   &_right
     &-link
       text-transform: uppercase
@@ -15,21 +38,31 @@
       line-height: 1.4
       letter-spacing: 1.12px
       margin-right: 40px
+      @media screen and (max-width: $width-container)
+        display: none
+
     &-btn
       background-color: transparent
       border: none
       margin: 0
       padding: 0
+
   &_bottom
     height: 275px
+
     &-text
       position: relative
       height: 385px
       top: -110px
+
       p
         text-transform: uppercase
         color: $green
         margin-bottom: 25px
+        @media screen and (max-width: $width-container)
+          margin-bottom: 58px
+          text-align: center
+
       h1
         color: $white
         @include bold
@@ -37,14 +70,26 @@
         font-size: 82px
         position: relative
         max-width: 750px
+        @media screen and (max-width: $width-container)
+          font-size: 42px
+          text-align: center
+
         span
           color: $black-title
           padding-top: 20px
           display: inline-block
+
         img
           position: absolute
           bottom: -4px
           right: -145px
+          @media screen and (max-width: $width-container)
+            width: 160px
+            margin-top: 15px
+            position: relative
+            right: 0
+            bottom: 0
+
       .scroll
         @include font-family-Montserrat
         @include semi-bold
@@ -53,6 +98,7 @@
         font-size: 14px
         position: relative
         transform: rotate(-90deg)
+
         &::before
           content: ''
           position: absolute
@@ -62,6 +108,7 @@
           top: 50%
           transform: translateY(-50%)
           left: -60px
+
         &_block
           display: flex
           justify-content: center
