@@ -386,11 +386,30 @@ a {
   text-decoration: none; }
 
 .main-page .header {
-  height: 460px; }
+  min-height: 460px; }
+  @media screen and (max-width: 1100px) {
+    .main-page .header {
+      background-position-x: 70%;
+      min-height: 50vh;
+      max-height: 460px; } }
 
 .header {
   padding: 30px 0;
   background: #2e2f34 url(../img/bg-header.svg) no-repeat center; }
+  @media screen and (max-width: 1100px) {
+    .header {
+      background-position-x: 70%;
+      min-height: 100vh;
+      max-height: 100vh; } }
+  .header_left {
+    width: 67px;
+    height: 33px; }
+    .header_left img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: contain;
+         object-fit: contain;
+      z-index: 9; }
   .header_top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -411,6 +430,9 @@ a {
     line-height: 1.4;
     letter-spacing: 1.12px;
     margin-right: 40px; }
+    @media screen and (max-width: 1100px) {
+      .header_right-link {
+        display: none; } }
   .header_right-btn {
     background-color: transparent;
     border: none;
@@ -426,6 +448,10 @@ a {
         text-transform: uppercase;
         color: #78b539;
         margin-bottom: 25px; }
+        @media screen and (max-width: 1100px) {
+          .header_bottom-text p {
+            margin-bottom: 58px;
+            text-align: center; } }
       .header_bottom-text h1 {
         color: #FFFFFF;
         font-weight: 700;
@@ -433,6 +459,10 @@ a {
         font-size: 82px;
         position: relative;
         max-width: 750px; }
+        @media screen and (max-width: 1100px) {
+          .header_bottom-text h1 {
+            font-size: 42px;
+            text-align: center; } }
         .header_bottom-text h1 span {
           color: #222326;
           padding-top: 20px;
@@ -441,6 +471,13 @@ a {
           position: absolute;
           bottom: -4px;
           right: -145px; }
+          @media screen and (max-width: 1100px) {
+            .header_bottom-text h1 img {
+              width: 160px;
+              margin-top: 15px;
+              position: relative;
+              right: 0;
+              bottom: 0; } }
       .header_bottom-text .scroll {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
@@ -481,6 +518,12 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
+    @media screen and (max-width: 1100px) {
+      .whatwe_bck {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .whatwe_left {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
@@ -488,6 +531,18 @@ a {
     height: 100%;
     margin-left: 35px;
     display: block; }
+    @media screen and (max-width: 1100px) {
+      .whatwe_left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-left: 0;
+        width: 100%;
+        -webkit-transform: rotate(0);
+                transform: rotate(0); } }
     .whatwe_left h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: 72px;
@@ -498,14 +553,39 @@ a {
       position: relative;
       width: 480px;
       right: 267px; }
+      @media screen and (max-width: 1100px) {
+        .whatwe_left h2 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: -webkit-max-content;
+          width: -moz-max-content;
+          width: max-content;
+          font-size: 42px;
+          right: 0; } }
       .whatwe_left h2 img {
         -webkit-transform: rotate(90deg);
                 transform: rotate(90deg);
         bottom: -16px;
         right: 36px;
         position: absolute; }
+        @media screen and (max-width: 1100px) {
+          .whatwe_left h2 img {
+            margin-left: 5px;
+            width: 60px;
+            height: 50px;
+            bottom: 0;
+            right: 0;
+            position: relative; } }
   .whatwe_right {
     width: 70%; }
+    @media screen and (max-width: 1100px) {
+      .whatwe_right {
+        margin-top: 60px;
+        width: 100%; } }
     .whatwe_right-block {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -522,15 +602,43 @@ a {
         padding-top: 150px;
         padding-left: 58px;
         background-color: #f3f5f6; }
+        @media screen and (max-width: 1100px) {
+          .whatwe_right-block_item {
+            height: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            padding: 50px 0 50px 0;
+            margin: 20px 0 0 0;
+            width: 100%; } }
         .whatwe_right-block_item:nth-child(1) {
           margin-bottom: 20px;
           margin-right: 20px; }
+          @media screen and (max-width: 1100px) {
+            .whatwe_right-block_item:nth-child(1) {
+              margin: 0; } }
         .whatwe_right-block_item:nth-child(2) {
           margin-bottom: 20px;
           margin-top: 80px; }
+          @media screen and (max-width: 1100px) {
+            .whatwe_right-block_item:nth-child(2) {
+              margin: 20px 0 0 0; } }
         .whatwe_right-block_item:nth-child(3) {
           margin-right: 20px;
           margin-top: -80px; }
+          @media screen and (max-width: 1100px) {
+            .whatwe_right-block_item:nth-child(3) {
+              margin: 20px 0 0 0; } }
         .whatwe_right-block_item .item_img {
           width: 40px;
           margin-bottom: 25px; }
