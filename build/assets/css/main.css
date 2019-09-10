@@ -245,6 +245,139 @@
   color: #FFFFFF;
   opacity: 0.45; }
 
+.wrap .header .thankyou, .wrap .header .error_404, .wrap .header .about-h {
+  display: none; }
+
+.thankyou-page .wrap .header {
+  background-position-x: right;
+  background-position-y: top;
+  background-size: cover; }
+  .thankyou-page .wrap .header_top {
+    margin-bottom: 170px; }
+  .thankyou-page .wrap .header .thankyou {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #FFFFFF; }
+    .thankyou-page .wrap .header .thankyou_title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 88px;
+      letter-spacing: 0.02em;
+      margin-top: 50px;
+      margin-bottom: 40px; }
+    .thankyou-page .wrap .header .thankyou_desc {
+      font-family: 'Helvetica', sans-serif;
+      font-size: 16px;
+      line-height: 36px;
+      max-width: 585px;
+      margin-bottom: 65px; }
+    .thankyou-page .wrap .header .thankyou_btn {
+      color: #FFFFFF;
+      background-color: #78b539;
+      padding: 17px 59px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 195px; }
+  .thankyou-page .wrap .header .error_404 {
+    display: none; }
+
+.thankyou-page .wrap .footer {
+  background: #37393E; }
+
+.error-page .wrap .header {
+  background-position-x: right;
+  background-position-y: top;
+  background-size: cover; }
+  .error-page .wrap .header_top {
+    margin-bottom: 145px; }
+  .error-page .wrap .header .thankyou {
+    display: none; }
+  .error-page .wrap .header .error_404 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #FFFFFF; }
+    .error-page .wrap .header .error_404_title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 88px;
+      position: relative;
+      width: 770px;
+      height: 276px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      z-index: 2;
+      margin-bottom: 75px; }
+      .error-page .wrap .header .error_404_title::before {
+        content: '';
+        width: 770px;
+        height: 276px;
+        position: absolute;
+        background: url(../img/404.svg) no-repeat center;
+        background-size: cover;
+        z-index: -1; }
+    .error-page .wrap .header .error_404_desc {
+      font-family: 'Helvetica', sans-serif;
+      font-size: 16px;
+      line-height: 36px;
+      max-width: 585px;
+      margin-bottom: 65px; }
+    .error-page .wrap .header .error_404_btn {
+      color: #FFFFFF;
+      background-color: #78b539;
+      padding: 17px 59px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 125px; }
+
+.error-page .wrap .footer {
+  background: #37393E; }
+
+.about-page .header {
+  height: 100vh; }
+
+.about-page header.header {
+  background-position: top right;
+  background-size: 120%;
+  background-position-y: -20px;
+  background-position-x: 0; }
+  .about-page header.header .container .header_top {
+    margin-bottom: 150px; }
+  .about-page header.header .container .about-h {
+    display: block; }
+
 body {
   font-family: Helvetica, sans-serif;
   font-size: 16px; }
@@ -934,6 +1067,23 @@ a {
     margin-right: 15px; }
   .contacts_str:last-child, .contacts_tell:last-child {
     margin-bottom: 0; }
+
+.about_text p {
+  text-transform: uppercase;
+  color: #78b539;
+  margin-bottom: 25px; }
+
+.about_text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 1.44px;
+  color: #FFFFFF;
+  max-width: 860px;
+  line-height: 120%; }
+  .about_text h1 img {
+    padding-left: 20px; }
 
 .footer {
   background-color: #2e2f34;

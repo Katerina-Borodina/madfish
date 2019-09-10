@@ -40,75 +40,10 @@
   color: $green
   position: relative
 
-//
-//@mixin h2-title-small
-//  @include font-family-Playfair
-//  font-size: 32px
-//  @include bold
-//  color: $black-title
-//  +mq(768px)
-//    font-size: 26px
-//  +mq(480px)
-//    font-size: 22px
-//
-//
-//@mixin line-left
-//  &::before
-//    content: ''
-//    position: absolute
-//    width: 54px
-//    height: 1px
-//    background-color: $black
-//    bottom: 27px
-//    +mq(1200px)
-//      width: 40px
-//    +mq(768px)
-//      width: 40px
-//
-//@mixin line-center-black
-//  &::before
-//    content: ''
-//    position: absolute
-//    width: 54px
-//    height: 1px
-//    background-color: $black
-//    bottom: 27px
-//    left: 50%
-//    transform: translateX(-50%)
-//    +mq(768px)
-//      width: 40px
-//      bottom: 13px
-//
-//
-//@mixin h2-title-black
-//  color: $black-title
-//@mixin h2-title-white
-//  color: $white
-//
-//@mixin sub-title
-//  @include font-family-Playfair
-//  font-size: 60px
-//  @include normal
-//  line-height: normal
-//  color: $white
-//  +mq(1200px)
-//    font-size: 50px
-//  +mq(768px)
-//    font-size: 30px
-//  +mq(480px)
-//    font-size: 20px
-//
-//@mixin title-desc-white
-//  @include font-family-OpenSans
-//  font:
-//    size: 16px
-//  line-height: 1.5
-//  color: $white
-//@mixin desc
-//  @include font-family-OpenSans
-//  font-size: 16px
-//  color: $black-light
-//  line-height: 1.5
-//  +mq(1200px)
-//    font-size: 14px
-//
+@mixin h2-title-white
+  @include font-family-Montserrat
+  font-size: 72px
+  @include bold
+  line-height: 0.9
+  letter-spacing: 1.44px
+  color: $white
