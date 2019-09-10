@@ -1,9 +1,9 @@
 # madfish
 
-`https://katerina-borodina.github.io/madfish/build/`
+[main page](https://katerina-borodina.github.io/madfish/build/)
 
-`https://katerina-borodina.github.io/madfish/build/contacts.html`
+[contacts page](https://katerina-borodina.github.io/madfish/build/contacts.html)
 
-`https://katerina-borodina.github.io/madfish/build/error.html`
+[404](https://katerina-borodina.github.io/madfish/build/error.html)
 
-`https://katerina-borodina.github.io/madfish/build/thankyou.html`
+[thankyou send](https://katerina-borodina.github.io/madfish/build/thankyou.html)
