@@ -10,3 +10,306 @@
       line-height: 120%
       img
         padding-left: 20px
+  &_slider-top
+    .slick-list
+      overflow: visible!important
+      padding: 0!important
+    .arrow-slider_right
+      top: 340px
+      left: 90px
+    .arrow-slider_left
+      top: 340px
+      left: 0
+  &_values
+    padding-top: 95px
+    padding-bottom: 265px
+    overflow: hidden
+    //margin-left: 10%
+    h2
+      @include h2-title
+      display: flex
+      margin-bottom: 35px
+      img
+        margin-left: 20px
+    p
+      @include font-family-Helvetica
+      font-size: 16px
+      line-height: 140%
+      letter-spacing: 0.02em
+      color: $black
+      max-width: 600px
+      margin-bottom: 90px
+    &-item
+      //height: 250px
+      width: 680px!important
+      margin-right: 115px
+      .item
+        &_img
+          width: 45%
+          float: left
+          height: 250px
+          img
+            width: 100%
+            object-fit: cover
+            height: 250px
+        &_text
+          width: 55%
+          float: right
+          height: 250px
+          padding-top: 40px
+          padding-left: 20px
+          padding-right: 30px
+          background-color: #F3F5F6
+        &_title
+          @include font-family-Montserrat
+          @include bold
+          font-size: 22px
+          line-height: 27px
+          color: $black
+          margin-bottom: 25px
+        &_desc
+          @include font-family-Helvetica
+          font-size: 16px
+          line-height: 32px
+          letter-spacing: 0.02em
+          color: $black
+  &_clients
+    background: $blue url(../img/line-blue.svg) no-repeat
+    background-size: cover
+    background-position-y: -140px
+    background-position-x: 310px
+    padding: 165px 0
+    h2
+      @include h2-title
+      margin-bottom: 35px
+    p
+      @include font-family-Helvetica
+      font-size: 16px
+      line-height: 140%
+      letter-spacing: 0.02em
+      color: $black
+    &-block
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: flex-end
+    &-item
+      width: 168px
+      height: 137px
+      background-color: $white
+      margin-bottom: 20px
+      &:nth-child(3n+1)
+        margin-right: 20px
+      &:nth-child(3n+2)
+        margin-right: 20px
+      img
+        width: 100%
+        object-fit: cover
+        height: 137px
+  &_offer
+    padding: 105px 0
+    h2
+      @include h2-title
+      max-width: 710px
+      margin-bottom: 135px
+      img
+        position: absolute
+        margin-left: 30px
+    &-block
+      display: flex
+      flex-direction: row
+      margin-bottom: 90px
+    &-item
+      width: 548px
+      padding: 30px 35px
+      background-color: $blue
+      height: 605px
+      margin-right: 20px
+      &:last-child
+        margin-right: 0
+      span
+        @include font-family-Montserrat
+        @include bold
+        font-size: 24px
+        line-height: 140%
+        letter-spacing: 0.02em
+        color: $green
+        margin-bottom: 25px
+        display: inline-block
+      .item_title
+        @include font-family-Montserrat
+        @include bold
+        font-size: 18px
+        line-height: 140%
+        letter-spacing: 0.02em
+        color: $black
+        margin-bottom: 20px
+        &-small
+          @include font-family-Helvetica
+          @include semi-bold
+          font-size: 14px
+          line-height: 200%
+          letter-spacing: 0.02em
+          color: $black
+          margin-bottom: 10px
+      ul
+        margin-bottom: 25px
+        li
+          position: relative
+          padding-left: 10px
+          margin-bottom: 5px
+          line-height: 170%
+          &:before
+            content: '-'
+            position: absolute
+            width: 100%
+            height: 100%
+            left: 0
+          &:last-child
+            margin-bottom: 0
+        &:last-child
+          margin-bottom: 0
+    a
+      @include font-family-Montserrat
+      @include bold
+      font-size: 14px
+      line-height: 120%
+      letter-spacing: 0.04em
+      color: $white
+      padding: 18px 68px
+      display: inline-block
+      background-color: $green
+      text-transform: uppercase
+  &_succeed
+    background: url(../img/succeed-bg.jpg) no-repeat center
+    background-size: cover
+    padding-top: 130px
+    padding-bottom: 180px
+    position: relative
+    z-index: 1
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background: rgba(243, 245, 246, 0.85)
+      z-index: -1
+    h2
+      @include h2-title
+      margin-bottom: 75px
+      max-width: 600px
+      line-height: 120%
+    a
+      @include font-family-Montserrat
+      @include bold
+      font-size: 14px
+      line-height: 120%
+      letter-spacing: 0.04em
+      color: $white
+      padding: 18px 68px
+      display: inline-block
+      background-color: $green
+      text-transform: uppercase
+  &_technology
+    padding: 145px 0
+    h2
+      @include h2-title
+      line-height: 120%
+      max-width: 465px
+      margin-bottom: 35px
+    p
+      @include font-family-Helvetica
+      font-size: 16px
+      line-height: 140%
+      letter-spacing: 0.02em
+      color: $black
+    &-block
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: flex-end
+    &-item
+      width: 168px
+      height: 137px
+      background-color: $blue
+      margin-bottom: 20px
+      &:nth-child(3n+1)
+        margin-right: 20px
+      &:nth-child(3n+2)
+        margin-right: 20px
+      img
+        width: 100%
+        object-fit: cover
+        height: 137px
+  &_clients-say
+    background: $blue url(../img/line-blue.svg) no-repeat
+    background-size: cover
+    background-position-y: -140px
+    background-position-x: 310px
+    padding: 90px 0 170px 0
+    overflow: hidden
+    h2
+      @include h2-title
+      margin-bottom: 80px
+      max-width: 430px
+      line-height: 120%
+      img
+        position: absolute
+        bottom: 0
+        margin-left: 25px
+    .about_slider-bottom
+      .arrow-slider_right
+        top: -150px
+        right: 0
+        left: auto
+      .arrow-slider_left
+        top: -150px
+        right: 90px
+        left: auto
+
+      .slick-list
+        overflow: visible
+      .slide-bottom_item
+        height: 362px!important
+        width: 662px!important
+        background-color: $white
+        margin-right: 37px
+        margin-left: 37px
+        padding: 50px 45px
+      .item_top
+        display: flex
+        margin-bottom: 25px
+        .item_img
+          width: 60px
+          height: 60px
+          border-radius: 100%
+          background-color: $blue
+          margin-right: 30px
+        .item_name
+          display: flex
+          flex-direction: column
+          margin-right: 15px
+          &-full
+            @include font-family-Montserrat
+            @include bold
+            font-size: 22px
+            line-height: 27px
+            color: $black
+            margin-bottom: 5px
+          &-company
+            @include font-family-Helvetica
+            font-size: 16px
+            line-height: 18px
+            letter-spacing: 0.02em
+            color: $black
+      .item_bottom
+        p
+          @include font-family-Helvetica
+          font-size: 16px
+          line-height: 30px
+          letter-spacing: 0.02em
+
+
+

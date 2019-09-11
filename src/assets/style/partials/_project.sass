@@ -1,0 +1,31 @@
+.project
+
+  &_square
+    width: 100%
+    display: flex
+    position: relative
+
+    &-green
+      width: 50%
+      background-color: $green
+
+    &-blue
+      width: 50%
+      background-color: $blue
+
+  &_text
+    p
+      text-transform: uppercase
+      color: $green
+      margin-bottom: 25px
+      max-width: 450px
+      line-height: 140%
+
+    h1
+      @include h2-title-white
+      max-width: 860px
+      line-height: 120%
+      margin-bottom: 25px
+
+      img
+        padding-left: 20px

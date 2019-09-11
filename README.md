@@ -7,3 +7,5 @@
 [404](https://katerina-borodina.github.io/madfish/build/error.html)
 
 [thankyou send](https://katerina-borodina.github.io/madfish/build/thankyou.html)
+
+[about page](https://katerina-borodina.github.io/madfish/build/about.html)
