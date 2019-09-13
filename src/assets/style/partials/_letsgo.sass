@@ -1,6 +1,10 @@
 .letsgo
   padding-top: 110px
   padding-bottom: 140px
+  @media screen and (max-width: $width-container)
+    padding-top: 80px
+    padding-bottom: 100px
+    width: 100%
   h2
     @include font-family-Montserrat
     font-size: 58px
@@ -10,12 +14,32 @@
     color: $green
     max-width: 750px
     margin-bottom: 65px
+    @media screen and (max-width: $width-container)
+      font-size: 42px
+      text-align: center
+    img
+      @media screen and (max-width: $width-container)
+        width: 275px
+        height: auto
+        object-fit: contain
   &_form
+    @media screen and (max-width: $width-container)
+      width: 100%
+      margin-left: 0
+      margin-right: 0
     &-left
+      @media screen and (max-width: $width-container)
+        padding-left: 0
+        padding-right: 0
+        margin-bottom: 70px
       &_top
         display: flex
         flex-direction: row
         margin-bottom: 55px
+        @media screen and (max-width: $width-container)
+          width: 100%
+          flex-direction: column
+          margin-bottom: 70px
         input
           width: 250px
           height: 55px
@@ -31,6 +55,10 @@
           font-size: 16px
           letter-spacing: 0.44px
           color: #37393e
+          @media screen and (max-width: $width-container)
+            width: 100%
+            &:last-child
+              margin-top: 70px
           &::placeholder
             color: #37393e
             @include font-family-Montserrat
@@ -55,6 +83,8 @@
           font-size: 16px
           letter-spacing: 0.44px
           color: #37393e
+          @media screen and (max-width: $width-container)
+            width: 100%
           &::placeholder
             color: #37393e
             @include font-family-Montserrat
@@ -64,6 +94,9 @@
             letter-spacing: 0.84px
             vertical-align: top
     &-right
+      @media screen and (max-width: $width-container)
+        padding-left: 0
+        padding-right: 0
       display: flex
       flex-direction: column
       .input_group
@@ -87,6 +120,8 @@
           width: 0
           &:checked ~ .checkmark
             background-color: $green
+            &:hover
+              background-color: $green
           &:checked ~ .checkmark:after
             display: block
         .checkmark
@@ -135,6 +170,8 @@
         background-color: $green
         width: 240px
         height: 55px
+        @media screen and (max-width: $width-container)
+          margin: 0 auto
 .pos-rel
   position: relative
 

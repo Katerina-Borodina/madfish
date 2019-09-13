@@ -3,15 +3,32 @@
   background-position-y: -10px
   padding-top: 120px
   padding-bottom: 130px
+  @media screen and (max-width: $width-container)
+    width: 100%
+    background: $blue url(../img/line-blue.svg) no-repeat 60% -34%
   h2
     @include h2-title
     margin-bottom: 60px
+    @media screen and (max-width: $width-container)
+      font-size: 42px
+      text-align: center
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: center
     img
       position: absolute
       margin-left: 30px
+      @media screen and (max-width: $width-container)
+        margin: 15px 0 0 0
+        position: relative
+        width: 115px
+        height: auto
   &_block
     display: flex
     flex-direction: row
+    @media screen and (max-width: $width-container)
+      flex-direction: column
     &-item
       width: 470px
       height: 500px
@@ -22,12 +39,26 @@
       display: flex
       flex-direction: column
       text-align: center
+      @media screen and (max-width: $width-container)
+        width: 100%
+        padding: 30px
+        height: auto
       &:first-child
         margin-right: 37px
+        @media screen and (max-width: $width-container)
+          margin-right: 0
+          margin-bottom: 20px
         span
           max-width: 175px
       &:nth-child(2)
         padding: 76px 90px 0
+        @media screen and (max-width: $width-container)
+          padding: 30px
+      .item_img
+        @media screen and (max-width: $width-container)
+          padding: 20px
+          border-radius: 50%
+          background: #F6F7F9
       h4
         @include font-family-Montserrat
         font-size: 18px
@@ -52,20 +83,12 @@
         line-height: 1.7
         letter-spacing: 0.28px
         color: $bg
-        padding-bottom: 25px
+        padding-bottom: 10px
+        padding-top: 10px
         position: relative
-        &::after
-          content: ''
-          position: absolute
-          width: 50px
-          height: 2px
-          background-color: #e0e6ea
-          top: 58px
-          transform: translateX(-50%)
-          left: 50%
-        &:last-child
-          &::after
-            display: none
+      hr
+        width: 50px
+        border: 1px solid #e0e6ea
 
 
 

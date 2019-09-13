@@ -4,12 +4,46 @@
   background-position-y: -10px
   padding-top: 130px
   padding-bottom: 140px
+  @media screen and (max-width: $width-container)
+    width: 100%
+    padding-bottom: 100px
+    padding-top: 90px
+    background-position-y: -10%
+    background-position-x: 45%
   h2
     @include h2-title
     margin-bottom: 65px
     padding-left: 10%
+    @media screen and (max-width: $width-container)
+      width: max-content
+      font-size: 42px
+      text-align: center
+      display: flex
+      align-items: center
+      flex-direction: row
+      justify-content: center
+    img
+      @media screen and (max-width: $width-container)
+        margin: 0 0 0 10px
+        position: relative
+        width: 100px
+        height: auto
   &_slider
     padding-left: 10%
+    @media screen and (max-width: $width-container)
+      padding-left: 20px
+    .slick-dots
+      position: relative
+      padding-right: 20px
+      bottom: 0
+      margin-top: 20px
+      margin-bottom: 60px
+      @media screen and (max-width: $width-container)
+        li button:before
+          color: rgba(255, 255, 255, 0.25)
+          font-size: 45px
+        li.slick-active button:before
+          color: #fff
     &-item
       .item_title
         @include font-family-Montserrat
@@ -20,11 +54,15 @@
         color: $white
         max-width: 380px
         margin-top: 18px
+        @media screen and (max-width: $width-container)
+          margin-left: 50px
       .item_bottom
         color: $white
         display: flex
         margin-top: 10px
         position: relative
+        @media screen and (max-width: $width-container)
+          margin-left: 50px
         img
           width: 30px
           height: 30px
