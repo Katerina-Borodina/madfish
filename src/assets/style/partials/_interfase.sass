@@ -402,8 +402,15 @@
       background-position-x: right
       background-position-y: top
       background-size: cover
+      @media screen and (max-width: $width-container)
+        background-position-x: 80%
+        background-position-y: -10%
+        background-size: 250%
+        min-height: 570px
       &_top
         margin-bottom: 145px
+        @media screen and (max-width: $width-container)
+          margin-bottom: 15px
       .thankyou
         display: none
       .error_404
@@ -426,6 +433,12 @@
           align-items: center
           z-index: 2
           margin-bottom: 75px
+          @media screen and (max-width: $width-container)
+            margin-bottom: 0
+            font-size: 42px
+            width: 100vw
+            min-height: 55vw
+            height: auto
           &::before
             content: ''
             width: 770px
@@ -434,12 +447,17 @@
             background: url(../img/404.svg) no-repeat center
             background-size: cover
             z-index: -1
+            @media screen and (max-width: $width-container)
+              width: 100%
+              height: 41vw
         &_desc
           @include font-family-Helvetica
           font-size: 16px
           line-height: 36px
           max-width: 585px
           margin-bottom: 65px
+          @media screen and (max-width: $width-container)
+            margin-bottom: 35px
         &_btn
           color: $white
           background-color: $green
