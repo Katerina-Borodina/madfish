@@ -82,6 +82,19 @@ function heightAbsolute(){
     $('.js-append-height').height($('.js-height').height());
 }
 
+function projectPageBottomSlider() {
+    $('.project_more_slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        prevArrow: '<div class="arrow-slider arrow-slider_left-blog"></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right-blog"></div>'
+    });
+}
+
 
 $(document).ready(function () {
     const BODY = $('body');
@@ -101,6 +114,7 @@ $(document).ready(function () {
 
     if (BODY.hasClass('project-page')) {
         heightAbsolute();
+        projectPageBottomSlider();
     }
     //
     // if (BODY.hasClass('restaurant-page')) {

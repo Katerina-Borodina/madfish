@@ -1,0 +1,91 @@
+.projects
+  &_top
+    p
+      text-transform: uppercase
+      color: $green
+      margin-bottom: 25px
+      max-width: 450px
+      line-height: 140%
+    h1
+      @include h2-title-white
+      line-height: 120%
+      margin-bottom: 25px
+      max-width: 600px
+      img
+        padding-left: 20px
+  &_block
+    display: flex
+    flex-direction: column
+    margin-top: -105px
+    margin-bottom: 125px
+  &_item
+    display: flex
+    flex-direction: row
+    height: 435px
+    margin-bottom: 45px
+    &:last-child
+      margin-bottom: 0
+    &:hover
+      .projects_item-title, .projects_item-desc
+        color: $green
+        transition: .4s
+      button
+        svg
+          line
+            stroke: $green
+            transition: .4s
+          path
+            fill: $green
+            transition: .4s
+      .projects_item-right
+        transition: .4s
+        &::before
+          opacity: 1
+    &-left
+      width: 50%
+      background-color: $blue
+      padding: 50px
+      position: relative
+    &-right
+      width: 50%
+      position: relative
+      transition: .4s
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background: rgba(120, 181, 57, .5)
+        opacity: 0
+        //visibility: hidden
+        transition: .4s
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &-title
+      max-width: 280px
+      @include font-family-Montserrat
+      @include bold
+      font-size: 22px
+      line-height: 27px
+      color: $black
+      margin-bottom: 20px
+      transition: .4s
+    &-desc
+      max-width: 280px
+      @include font-family-Helvetica
+      font-size: 14px
+      line-height: 30px
+      color: $black
+      transition: .4s
+    button
+      background: transparent
+      border: none
+      margin: 0
+      padding: 0
+      position: absolute
+      bottom: 65px
+      svg
+        line, path
+          transition: .4s

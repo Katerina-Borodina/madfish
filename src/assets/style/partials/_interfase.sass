@@ -49,9 +49,48 @@
 .blog_slider
   margin-bottom: 80px
   .slick-slide
-    width: 447px!important
-    height: 370px!important
+    width: 447px
+    height: 370px
     margin-right: 50px
+
+.project_more_slider
+  .arrow-slider_left-blog
+    background-color: #2E2F34
+    top: -150px
+    left: 1110px
+  .arrow-slider_right-blog
+    top: -150px
+  .slick-slide
+    width: 434px
+    height: 434px
+    margin-right: 20px
+    position: relative
+    z-index: 1
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background: #000000
+      opacity: 0.8
+      top: 0
+      left: 0
+      z-index: -1
+  .slick-active
+    position: relative
+    z-index: 1
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background: #F3F5F6
+      opacity: 0.8
+      top: 0
+      left: 0
+      z-index: -1
+    .item_title, .item_desc
+      color: $black
 
 .btn_blog-more
   @include font-family-Montserrat
@@ -191,7 +230,7 @@
 
 .wrap
   .header
-    .thankyou, .error_404, .about-h, .project-h
+    .thankyou, .error_404, .about-h, .project-h, .projects-h
       display: none
 
 
@@ -316,6 +355,23 @@
       .project-h
         display: block
         padding-bottom: 100px
+
+.projects-page
+  header.header
+    background-position: top right
+    background-size: 120%
+    background-position-y: -20px
+    background-position-x: 0
+    .container
+      .header_top
+        margin-bottom: 120px
+      .projects-h
+        display: block
+        padding-bottom: 140px
+  .letsgo
+    background: $blue
+    input, textarea
+      background: transparent
 
 
 
