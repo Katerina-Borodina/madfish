@@ -3,6 +3,11 @@
   padding-top: 72px
   padding-bottom: 93px
   color: $white
+  @media screen and (max-width: $width-container)
+    padding-bottom: 70px
+  .col-lg-4
+    @media screen and (max-width: $width-container)
+      margin-bottom: 70px
   &_logo
     display: inline-block
     margin-bottom: 35px
@@ -10,12 +15,21 @@
     @include font-family-Helvetica
     font-size: 14px
     letter-spacing: 0.91px
+    @media screen and (max-width: $width-container)
+      width: 160px
   &_group
     display: flex
     flex-direction: row
     justify-content: space-between
+    @media screen and (max-width: $width-container)
+      width: 100%
+      margin-bottom: 70px
     div
       margin-right: 70px
+      @media screen and (max-width: $width-container)
+        margin-right: 0
+        width: 50%
+        padding-right: 40px
       &:last-child
         margin-right: 0
   &_location
@@ -35,15 +49,22 @@
     display: flex
     flex-direction: column
     align-items: flex-end
+    @media screen and (max-width: $width-container)
+      align-items: center
     &-group
       margin-bottom: 25px
       a
         display: inline-block
         margin-right: 25px
         transition: .4s
+        @media screen and (max-width: $width-container)
+          margin-right: 50px
         &:last-child
           margin-right: 0
         svg
+          @media screen and (max-width: $width-container)
+            width: 25px
+            height: auto
           path
             fill: $white
             transition: .4s

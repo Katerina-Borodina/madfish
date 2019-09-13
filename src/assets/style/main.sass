@@ -3,8 +3,12 @@
 @import "partials/interfase"
 
 body
+  overflow: auto
   font-family: Helvetica, sans-serif
   font-size: 16px
+  .wrap
+    @media screen and (max-width: $width-container)
+      overflow: hidden
 a
   text-decoration: none
 

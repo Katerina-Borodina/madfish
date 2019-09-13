@@ -4,33 +4,68 @@
       text-transform: uppercase
       color: $green
       margin-bottom: 25px
+      @media screen and (max-width: $width-container)
+        text-align: center
     h1
       @include h2-title-white
       max-width: 860px
       line-height: 120%
+      @media screen and (max-width: $width-container)
+        width: 100%
+        font-size: 42px
+        text-align: center
       img
         padding-left: 20px
+        @media screen and (max-width: $width-container)
+          width: 285px
+          height: auto
+          object-fit: contain
+          padding-left: 0
   &_slider-top
     .slick-list
       overflow: visible!important
-      padding: 0!important
+    .slick-dots
+      @media screen and (max-width: $width-container)
+        margin-top: 30px
+        position: relative
+    .slick-dots li button:before
+      @media screen and (max-width: $width-container)
+        font-size: 40px
     .arrow-slider_right
       top: 340px
       left: 90px
+      @media screen and (max-width: $width-container)
+        display: none
     .arrow-slider_left
       top: 340px
       left: 0
+      @media screen and (max-width: $width-container)
+        display: none
   &_values
     padding-top: 95px
     padding-bottom: 265px
     overflow: hidden
+    @media screen and (max-width: $width-container)
+      padding-bottom: 95px
     //margin-left: 10%
     h2
       @include h2-title
       display: flex
       margin-bottom: 35px
+      @media screen and (max-width: $width-container)
+        font-size: 42px
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
       img
         margin-left: 20px
+        @media screen and (max-width: $width-container)
+          margin: 15px 0 0 0
+          position: relative
+          width: 115px
+          height: auto
     p
       @include font-family-Helvetica
       font-size: 16px
@@ -39,15 +74,25 @@
       color: $black
       max-width: 600px
       margin-bottom: 90px
+      @media screen and (max-width: $width-container)
+        text-align: center
+        padding-left: 15px
+        padding-right: 15px
     &-item
       //height: 250px
-      width: 680px!important
+      width: 680px
       margin-right: 115px
+      @media screen and (max-width: $width-container)
+        width: 80vw
+        margin-right: 20px
       .item
         &_img
           width: 45%
           float: left
           height: 250px
+          @media screen and (max-width: $width-container)
+            width: 100%
+            float: none
           img
             width: 100%
             object-fit: cover
@@ -60,6 +105,11 @@
           padding-left: 20px
           padding-right: 30px
           background-color: #F3F5F6
+          @media screen and (max-width: $width-container)
+            min-height: 320px
+            width: 100%
+          @media screen and (max-width: $width-container)
+            float: none
         &_title
           @include font-family-Montserrat
           @include bold
@@ -73,58 +123,107 @@
           line-height: 32px
           letter-spacing: 0.02em
           color: $black
+          @media screen and (max-width: $width-container)
+            font-size: 14px
   &_clients
     background: $blue url(../img/line-blue.svg) no-repeat
     background-size: cover
     background-position-y: -140px
     background-position-x: 310px
     padding: 165px 0
+    @media screen and (max-width: $width-container)
+      background-size: inherit
+      background-position-y: top
+      background-position-x: center
+      padding: 95px 0
     h2
       @include h2-title
       margin-bottom: 35px
+      @media screen and (max-width: $width-container)
+        font-size: 42px
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
     p
       @include font-family-Helvetica
       font-size: 16px
       line-height: 140%
       letter-spacing: 0.02em
       color: $black
+      @media screen and (max-width: $width-container)
+        text-align: center
     &-block
       display: flex
       flex-direction: row
       flex-wrap: wrap
       justify-content: flex-end
+      @media screen and (max-width: $width-container)
+        margin-top: 70px
+        justify-content: space-between
     &-item
       width: 168px
       height: 137px
       background-color: $white
       margin-bottom: 20px
+      @media screen and (max-width: $width-container)
+        width: calc(50% - 10px)
+        height: 25vw
       &:nth-child(3n+1)
         margin-right: 20px
+        @media screen and (max-width: $width-container)
+          margin-right: 0
       &:nth-child(3n+2)
         margin-right: 20px
+        @media screen and (max-width: $width-container)
+          margin-right: 0
       img
         width: 100%
         object-fit: cover
         height: 137px
   &_offer
     padding: 105px 0
+    @media screen and (max-width: $width-container)
+      padding: 95px 0
     h2
       @include h2-title
       max-width: 710px
       margin-bottom: 135px
+      @media screen and (max-width: $width-container)
+        font-size: 40px
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        margin-bottom: 50px
       img
         position: absolute
         margin-left: 30px
+        @media screen and (max-width: $width-container)
+          margin: 15px 0 0 0
+          position: relative
+          width: 278px
+          height: auto
     &-block
       display: flex
       flex-direction: row
       margin-bottom: 90px
+      @media screen and (max-width: $width-container)
+        flex-direction: column
     &-item
       width: 548px
       padding: 30px 35px
       background-color: $blue
       height: 605px
       margin-right: 20px
+      @media screen and (max-width: $width-container)
+        padding: 30px 20px
+        width: 100%
+        height: auto
+        margin-right: 0
+        margin-top: 20px
       &:last-child
         margin-right: 0
       span
@@ -180,6 +279,10 @@
       display: inline-block
       background-color: $green
       text-transform: uppercase
+      @media screen and (max-width: $width-container)
+        display: block
+        margin: 0 auto
+        width: max-content
   &_succeed
     background: url(../img/succeed-bg.jpg) no-repeat center
     background-size: cover
@@ -187,6 +290,9 @@
     padding-bottom: 180px
     position: relative
     z-index: 1
+    @media screen and (max-width: $width-container)
+      padding-top: 95px
+      padding-bottom: 95px
     &:before
       content: ''
       position: absolute
@@ -201,6 +307,19 @@
       margin-bottom: 75px
       max-width: 600px
       line-height: 120%
+      @media screen and (max-width: $width-container)
+        font-size: 40px
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+      img
+        @media screen and (max-width: $width-container)
+          margin: 15px 0 0 0
+          position: relative
+          width: 226px
+          height: auto
     a
       @include font-family-Montserrat
       @include bold
@@ -212,33 +331,65 @@
       display: inline-block
       background-color: $green
       text-transform: uppercase
+      @media screen and (max-width: $width-container)
+        padding: 18px 88px
+        display: block
+        width: max-content
+        margin: 0 auto
   &_technology
     padding: 145px 0
+    @media screen and (max-width: $width-container)
+      padding: 95px 0
     h2
       @include h2-title
       line-height: 120%
       max-width: 465px
       margin-bottom: 35px
+      @media screen and (max-width: $width-container)
+        font-size: 40px
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+      img
+        @media screen and (max-width: $width-container)
+          margin: 15px 0 0 0
+          position: relative
+          width: 123px
+          height: auto
     p
       @include font-family-Helvetica
       font-size: 16px
       line-height: 140%
       letter-spacing: 0.02em
       color: $black
+      @media screen and (max-width: $width-container)
+        text-align: center
     &-block
       display: flex
       flex-direction: row
       flex-wrap: wrap
       justify-content: flex-end
+      @media screen and (max-width: $width-container)
+        margin-top: 70px
+        justify-content: space-between
     &-item
       width: 168px
       height: 137px
       background-color: $blue
       margin-bottom: 20px
+      @media screen and (max-width: $width-container)
+        width: calc(50% - 10px)
+        height: 25vw
       &:nth-child(3n+1)
         margin-right: 20px
+        @media screen and (max-width: $width-container)
+          margin-right: 0
       &:nth-child(3n+2)
         margin-right: 20px
+        @media screen and (max-width: $width-container)
+          margin-right: 0
       img
         width: 100%
         object-fit: cover
@@ -250,47 +401,101 @@
     background-position-x: 310px
     padding: 90px 0 170px 0
     overflow: hidden
+    @media screen and (max-width: $width-container)
+      background-size: 200%
+      background-position-y: top
+      background-position-x: 80%
+      padding-bottom: 90px
     h2
       @include h2-title
       margin-bottom: 80px
       max-width: 430px
       line-height: 120%
+      @media screen and (max-width: $width-container)
+        font-size: 40px
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
       img
         position: absolute
         bottom: 0
         margin-left: 25px
+        @media screen and (max-width: $width-container)
+          margin: 15px 0 0 0
+          position: relative
+          width: 90px
+          height: auto
     .about_slider-bottom
+      @media screen and (max-width: $width-container)
+        padding-left: 10px
       .arrow-slider_right
         top: -150px
         right: 0
         left: auto
+        @media screen and (max-width: $width-container)
+          display: none
       .arrow-slider_left
         top: -150px
         right: 90px
         left: auto
+        @media screen and (max-width: $width-container)
+          display: none
 
       .slick-list
         overflow: visible
+      .slick-dots
+        @media screen and (max-width: $width-container)
+          margin-top: 30px
+          position: relative
+      .slick-dots li button:before
+        @media screen and (max-width: $width-container)
+          font-size: 40px
       .slide-bottom_item
-        height: 362px!important
-        width: 662px!important
+        height: 362px
+        width: 662px
         background-color: $white
         margin-right: 37px
         margin-left: 37px
         padding: 50px 45px
+        @media screen and (max-width: $width-container)
+          width: 80vw
+          margin-right: -10px
+          height: auto
+          padding-left: 20px
+          padding-right: 20px
+          position: relative
       .item_top
         display: flex
         margin-bottom: 25px
+        @media screen and (max-width: $width-container)
+          width: 100%
         .item_img
           width: 60px
           height: 60px
           border-radius: 100%
           background-color: $blue
           margin-right: 30px
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+          @media screen and (max-width: $width-container)
+            background-color: #969ba1
+            width: 90px
+            height: 90px
+            position: absolute
+            top: -50px
+            left: 50%
+            transform: translateX(-50%)
         .item_name
           display: flex
           flex-direction: column
           margin-right: 15px
+          @media screen and (max-width: $width-container)
+            width: 100%
+            text-align: center
           &-full
             @include font-family-Montserrat
             @include bold
@@ -304,6 +509,15 @@
             line-height: 18px
             letter-spacing: 0.02em
             color: $black
+        .item_social
+          @media screen and (max-width: $width-container)
+            position: absolute
+            top: 15px
+            left: 60%
+            transform: translateX(-50%)
+            img
+              border-radius: 50%
+              background-color: #fff
       .item_bottom
         p
           @include font-family-Helvetica
