@@ -393,9 +393,15 @@
     background-size: 120%
     background-position-y: -20px
     background-position-x: 0
+    @media screen and (max-width: $width-container)
+      background-size: 400%
+      background-position-y: 30%
+      background-position-x: 50%
     .container
       .header_top
         margin-bottom: 150px
+        @media screen and (max-width: $width-container)
+          margin-bottom: 40px
       .about-h
         display: block
 
