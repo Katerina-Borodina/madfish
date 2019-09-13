@@ -149,6 +149,17 @@ function projectPageBottomSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: 0,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }],
         prevArrow: '<div class="arrow-slider arrow-slider_left-blog"></div>',
         nextArrow: '<div class="arrow-slider arrow-slider_right-blog"></div>'
     });
