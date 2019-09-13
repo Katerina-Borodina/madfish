@@ -4,14 +4,41 @@
   margin-top: 150px
   margin-bottom: 130px
   width: 90%
-  height: 600px
+  height: auto
+  display: flex
+  justify-content: space-between
+  @media screen and (max-width: $width-container)
+    display: block
+    width: 100%
+    margin-left: 0
+    margin-top: 0
+    overflow: hidden
   &_slider
     width: 790px
-    float: right
+    //float: right
+    @media screen and (max-width: $width-container)
+      width: 100%
+      float: none
+      padding-left: 15px
+      padding-right: 15px
+    .slick-list
+      @media screen and (max-width: $width-container)
+        overflow: visible
+        //transform: translateX(-20px)
+    .slick-dots
+      @media screen and (max-width: $width-container)
+        position: relative
+    .slick-dots li button:before
+      @media screen and (max-width: $width-container)
+        font-size: 40px
     &-item
       background-color: $blue
       padding: 57px 0 0 45px
       position: relative
+      @media screen and (max-width: $width-container)
+        padding-top: 45px
+        padding-left: 16px
+        padding-right: 16px
       .span-title
         @include font-family-Montserrat
         font-size: 14px
@@ -22,6 +49,10 @@
         padding-left: 10px
         padding-bottom: 90px
         display: inline-block
+        @media screen and (max-width: $width-container)
+          padding: 0
+          width: 100%
+          text-align: center
       .span-desc
         @include font-family-Montserrat
         font-size: 26px
@@ -31,6 +62,8 @@
         max-width: 230px
         display: inline-block
         margin-bottom: 75px
+        @media screen and (max-width: $width-container)
+          font-size: 18px
       img
         padding-bottom: 35px
       button
@@ -39,16 +72,40 @@
         border: none
         position: absolute
         right: 60px
+        @media screen and (max-width: $width-container)
+          height: auto
+          left: 15px
+          bottom: 0
+          padding: 0
     &-text
       width: 40%
-      float: left
+      //float: left
       margin-top: 95px
+      @media screen and (max-width: $width-container)
+        width: 100%
+        float: none
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
       h2
         @include h2-title
         max-width: 400px
+        @media screen and (max-width: $width-container)
+          font-size: 42px
+          text-align: center
+          display: flex
+          align-items: center
+          flex-direction: column
+          justify-content: center
 
         img
           padding-top: 15px
+          @media screen and (max-width: $width-container)
+            margin: 15px 0 0 0
+            position: relative
+            width: 145px
+            height: auto
       p
         @include font-family-Montserrat
         @include medium
@@ -57,3 +114,9 @@
         letter-spacing: 0.96px
         color: $black
         max-width: 400px
+        @media screen and (max-width: $width-container)
+          font-size: 14px
+          padding-left: 15px
+          padding-right: 15px
+          text-align: center
+          margin-bottom: 40px

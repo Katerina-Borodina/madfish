@@ -5,6 +5,34 @@ function mainPageTopSlider() {
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            // {
+            //     breakpoint: 600,
+            //     settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 2
+            //     }
+            // },
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //     }
+            // }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ],
         prevArrow: '<div class="arrow-slider arrow-slider_left"></div>',
         nextArrow: '<div class="arrow-slider arrow-slider_right"></div>'
     });
@@ -18,6 +46,16 @@ function mainPageBottomSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }],
         prevArrow: '<div class="arrow-slider arrow-slider_left-blog"></div>',
         nextArrow: '<div class="arrow-slider arrow-slider_right-blog"></div>'
     });
@@ -78,7 +116,7 @@ function aboutPageBottomSlider() {
     });
 }
 
-function heightAbsolute(){
+function heightAbsolute() {
     $('.js-append-height').height($('.js-height').height());
 }
 
