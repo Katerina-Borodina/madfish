@@ -1,4 +1,8 @@
 .contacts
+  .custom-color-mob
+    @media screen and (max-width: $width-container)
+      padding-top: 70px
+      background-color: #F3F5F6
   h2
     @include font-family-Montserrat
     @include bold
@@ -42,6 +46,8 @@
     @include bold
     letter-spacing: 0.91px
     margin-bottom: 27px
+    @media screen and (max-width: $width-container)
+      color: #78B539
   &_str, &_tell
     @include font-family-Helvetica
     font-size: 14px
