@@ -1,0 +1,40 @@
+.blog
+  &_top
+    display: flex
+    width: 90%
+    margin: 0 auto
+    height: 55px
+    &-left
+      display: flex
+      background: #37393E
+      max-width: 1140px
+      padding: 15px 30px 15px 85px
+      justify-content: space-between
+      width: 85%
+      .link
+        justify-content: space-between
+        display: flex
+        width: 70%
+        a
+          display: inline-block
+          @include font-family-Helvetica
+          font-size: 15px
+          line-height: 26px
+          letter-spacing: 0.3px
+          color: $white
+          opacity: 0.45
+    &-right
+      width: 15%
+      //height: 55px
+      a
+        width: 100%
+        background-color: $green
+        @include font-family-Montserrat
+        @include bold
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        letter-spacing: 4px
+        text-transform: uppercase
+        color: $white
+        padding: 15px 0
