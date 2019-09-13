@@ -8,13 +8,32 @@
     color: $white
     max-width: 450px
     margin-bottom: 70px
+    @media screen and (max-width: $width-container)
+      font-size: 42px
+      text-align: center
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: center
+    img
+      @media screen and (max-width: $width-container)
+        margin: 15px 0 0 0
+        position: relative
+        width: 200px
+        height: auto
   &_loc
     display: flex
     flex-direction: row
     color: $white
     margin-bottom: 55px
+    @media screen and (max-width: $width-container)
+      justify-content: space-between
+      align-items: center
     div
       margin-right: 70px
+      @media screen and (max-width: $width-container)
+        margin-right: 0
+        width: calc(50% - 15px)
       &:last-child
         margin-right: 0
   &_location
@@ -30,5 +49,7 @@
     margin-bottom: 15px
     img
       margin-right: 15px
+      @media screen and (max-width: $width-container)
+        display: none
     &:last-child
       margin-bottom: 0

@@ -266,7 +266,7 @@
     @media screen and (max-width: 1100px) {
       .menu_nav-link {
         position: absolute;
-        bottom: 40px;
+        bottom: 100px;
         width: 100%; } }
     .menu_nav-link a {
       display: inline-block;
@@ -334,9 +334,15 @@
 .contacts-page .contacts {
   height: calc(100vh - 110px);
   background-color: #2e2f34; }
+  @media screen and (max-width: 1100px) {
+    .contacts-page .contacts {
+      height: auto; } }
 
 .contacts-page .header {
   background-image: none; }
+  @media screen and (max-width: 1100px) {
+    .contacts-page .header {
+      min-height: auto; } }
 
 .contacts-page .letsgo_form {
   margin-bottom: 0; }
@@ -1618,6 +1624,29 @@ a {
   color: #FFFFFF;
   max-width: 450px;
   margin-bottom: 70px; }
+  @media screen and (max-width: 1100px) {
+    .contacts h2 {
+      font-size: 42px;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media screen and (max-width: 1100px) {
+    .contacts h2 img {
+      margin: 15px 0 0 0;
+      position: relative;
+      width: 200px;
+      height: auto; } }
 
 .contacts_loc {
   display: -webkit-box;
@@ -1629,8 +1658,20 @@ a {
           flex-direction: row;
   color: #FFFFFF;
   margin-bottom: 55px; }
+  @media screen and (max-width: 1100px) {
+    .contacts_loc {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .contacts_loc div {
     margin-right: 70px; }
+    @media screen and (max-width: 1100px) {
+      .contacts_loc div {
+        margin-right: 0;
+        width: calc(50% - 15px); } }
     .contacts_loc div:last-child {
       margin-right: 0; }
 
@@ -1648,6 +1689,9 @@ a {
   margin-bottom: 15px; }
   .contacts_str img, .contacts_tell img {
     margin-right: 15px; }
+    @media screen and (max-width: 1100px) {
+      .contacts_str img, .contacts_tell img {
+        display: none; } }
   .contacts_str:last-child, .contacts_tell:last-child {
     margin-bottom: 0; }
 

@@ -205,7 +205,7 @@
     justify-content: center
     @media screen and (max-width: $width-container)
       position: absolute
-      bottom: 40px
+      bottom: 100px
       width: 100%
     a
       display: inline-block
@@ -258,8 +258,12 @@
   .contacts
     height: calc(100vh - 110px)
     background-color: $bg
+    @media screen and (max-width: $width-container)
+      height: auto
   .header
     background-image: none
+    @media screen and (max-width: $width-container)
+      min-height: auto
   .letsgo_form
     margin-bottom: 0
     &-left
