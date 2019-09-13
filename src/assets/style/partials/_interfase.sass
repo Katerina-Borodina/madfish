@@ -8,6 +8,10 @@
   position: relative
   margin-top: 35px
   display: inline-block
+  @media screen and (max-width: $width-container)
+    margin: 40px auto 0
+    display: flex
+    width: max-content
   &::after
     content: ''
     position: absolute
@@ -17,6 +21,8 @@
     top: 50%
     transform: translateY(-50%)
     right: -60px
+    @media screen and (max-width: $width-container)
+      display: none
 .latest_slider
   .slick-slide
     width: 380px
