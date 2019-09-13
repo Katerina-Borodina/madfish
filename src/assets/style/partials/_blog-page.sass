@@ -1,8 +1,8 @@
 .blog
   &_top
     display: flex
-    width: 90%
-    margin: 0 auto
+    width: 100%
+    //margin: 0 auto
     height: 55px
     &-left
       display: flex
@@ -10,7 +10,7 @@
       max-width: 1140px
       padding: 15px 30px 15px 85px
       justify-content: space-between
-      width: 85%
+      width: 80%
       .link
         justify-content: space-between
         display: flex
@@ -23,18 +23,86 @@
           letter-spacing: 0.3px
           color: $white
           opacity: 0.45
+          transition: .4s
+          &:hover
+            transition: .4s
+            color: $green
     &-right
-      width: 15%
-      //height: 55px
+      width: 20%
+      height: 100%
       a
         width: 100%
         background-color: $green
         @include font-family-Montserrat
         @include bold
         font-size: 14px
-        line-height: 17px
+        line-height: 24px
         text-align: center
         letter-spacing: 4px
         text-transform: uppercase
         color: $white
         padding: 15px 0
+        display: inline-block
+        height: 100%
+  &-p
+    margin-top: -172px
+    &_top
+      display: flex
+      justify-content: flex-end
+      position: relative
+      &-img
+        width: 65%
+        height: 344px
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+      &-plash
+        position: absolute
+        left: 0
+        height: auto
+        background-color: $blue
+        bottom: -40px
+        width: 50%
+        padding: 32px 44px 40px 34px
+        .plash_top
+          display: flex
+          justify-content: space-between
+          &-left
+            @include font-family-Montserrat
+            @include bold
+            font-size: 16px
+            line-height: 20px
+            letter-spacing: 6px
+            text-transform: uppercase
+            color: $green
+            margin-bottom: 15px
+          &-right
+            @include font-family-Helvetica
+            font-size: 14px
+            line-height: 16px
+            letter-spacing: 0.3px
+            color: #1A1A1A
+        .plash_center
+          @include font-family-Montserrat
+          @include bold
+          font-size: 22px
+          line-height: 38px
+          letter-spacing: 0.3px
+          color: #2C303C
+          margin-bottom: 20px
+        .plash_bottom
+          display: flex
+          justify-content: space-between
+          &-left
+            display: flex
+        .plash_img
+          width: 29px
+          height: 29px
+          border-radius: 100%
+          margin-right: 10px
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 100%
