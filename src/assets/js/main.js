@@ -186,15 +186,17 @@ $(document).ready(function () {
         heightAbsolute();
         projectPageBottomSlider();
     }
-    //
-    // if (BODY.hasClass('restaurant-page')) {
-    //     restaurantPageScrollToBlock();
-    //     restaurantPageHeaderSlider();
-    //     restaurantPageTopLoopSlider();
-    //     restaurantPageBottomSlider();
-    //     restaurantPageBottomLoopSlider();
-    // }
-    //
+
+    if (BODY.hasClass('blog-page')) {
+        let items = $('.blog-p_item');
+
+        items.each(function (index, value) {
+            console.log('height', $(value).find('.blog-p_item-plash').height());
+            $(value).css("margin-bottom", $(value).find('.blog-p_item-plash').height() + 25);
+        })
+
+    }
+
     // if (BODY.hasClass('tennis-page')) {
     //     tennisPageHeaderSlider();
     //     tennisPageScrollToBlock();

@@ -374,6 +374,8 @@
       background-size: cover
       &_top
         margin-bottom: 170px
+        @media screen and (max-width: $width-container)
+          margin-bottom: 40px
       .thankyou
         display: flex
         flex-direction: column
@@ -389,12 +391,19 @@
           letter-spacing: 0.02em
           margin-top: 50px
           margin-bottom: 40px
+          @media screen and (max-width: $width-container)
+            font-size: 42px
+            margin-top: 10px
+            margin-bottom: 10px
         &_desc
           @include font-family-Helvetica
           font-size: 16px
           line-height: 36px
           max-width: 585px
           margin-bottom: 65px
+          @media screen and (max-width: $width-container)
+            font-size: 14px
+            margin-bottom: 20px
         &_btn
           color: $white
           background-color: $green
@@ -527,12 +536,23 @@
     background-size: 120%
     background-position-y: -20px
     background-position-x: 0
+    @media screen and (max-width: $width-container)
+      background-size: 350%
+      background-position-y: 0
+      background-position-x: 60%
+      width: 100%
+      height: 100vh
+      min-height: 568px
     .container
       .header_top
         margin-bottom: 120px
+        @media screen and (max-width: $width-container)
+          margin-bottom: 70px
       .projects-h
         display: block
         padding-bottom: 140px
+        @media screen and (max-width: $width-container)
+          padding-bottom: 0
   .letsgo
     background: $blue
     input, textarea
