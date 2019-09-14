@@ -564,12 +564,64 @@
     background-size: 100%
     background-position-y: -20px
     background-position-x: 0
+    @media screen and (max-width: $width-container)
+      background-size: 300%
+      background-position-y: -70%
+      background-position-x: 60%
     .container
       .header_top
         margin-bottom: 60px
       .blog-h
         display: block
         margin-bottom: 235px
+        @media screen and (max-width: $width-container)
+          .blog_top
+            display: none
+        .mobile
+          display: none
+          @media screen and (max-width: $width-container)
+            display: flex
+            flex-direction: column
+            width: 100%
+            .mobile-top
+              width: 100%
+              display: flex
+              flex-wrap: wrap
+              justify-content: space-between
+              align-items: center
+              .item
+                width: calc(50% - 15px)
+              &-link
+                padding: 18px 0 18px 5px
+                background: #37393E
+                position: relative
+                svg
+                  position: absolute
+                  right: 15px
+                select
+                  width: 100%
+                  background: #37393E
+                  border: none
+                  border-radius: 0
+                  color: #78B539
+              &-search
+                padding: 18px 0 18px 5px
+                background: #37393E
+                position: relative
+                form
+                  position: relative
+                  input
+                    width: calc(100% - 35px)
+                    background: transparent
+                    border: none
+                    border-radius: 0
+                    outline: none
+                  button
+                    position: absolute
+                    top: 0
+                    right: 5px
+                    svg
+                      width: auto
 
 
 
