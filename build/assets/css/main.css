@@ -155,9 +155,6 @@
 .project_more_slider .slick-active {
   position: relative;
   z-index: 1; }
-  @media screen and (max-width: 1100px) {
-    .project_more_slider .slick-active {
-      z-index: auto; } }
   .project_more_slider .slick-active::after {
     content: '';
     position: absolute;
@@ -3112,6 +3109,9 @@ a {
   bottom: 0; }
   .project-page .slick-dots li button:before {
     font-size: 45px; }
+  @media screen and (max-width: 1100px) {
+    .project-page .slick-dots .slick-active:after {
+      display: none; } }
 
 .projects_top p {
   text-transform: uppercase;
