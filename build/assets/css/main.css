@@ -3542,9 +3542,18 @@ a {
         .blog-p_item-plash .plash_bottom-left {
           display: -webkit-box;
           display: -ms-flexbox;
-          display: flex; }
+          display: flex;
+          color: #000000;
+          font-family: 'Helvetica', sans-serif;
+          font-size: 14px;
+          line-height: 26px;
+          letter-spacing: 0.3px; }
         .blog-p_item-plash .plash_bottom-right {
-          color: #37393E; }
+          color: #37393E;
+          font-family: 'Helvetica', sans-serif;
+          font-size: 14px;
+          line-height: 26px;
+          letter-spacing: 0.3px; }
       .blog-p_item-plash .plash_img {
         width: 29px;
         height: 29px;
