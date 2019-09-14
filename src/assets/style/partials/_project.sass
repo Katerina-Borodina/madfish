@@ -3,12 +3,18 @@
     width: 100%
     display: flex
     position: relative
+    @media screen and (max-width: $width-container)
+      flex-direction: column
     &-green
       width: 50%
       background-color: $green
+      @media screen and (max-width: $width-container)
+        width: 100%
     &-blue
       width: 50%
       background-color: $blue
+      @media screen and (max-width: $width-container)
+        width: 100%
   &_top
     p
       text-transform: uppercase
@@ -16,29 +22,52 @@
       margin-bottom: 25px
       max-width: 450px
       line-height: 140%
+      @media screen and (max-width: $width-container)
+        text-align: center
     h1
       @include h2-title-white
       max-width: 860px
       line-height: 120%
       margin-bottom: 25px
+      @media screen and (max-width: $width-container)
+        font-size: 42px
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        margin-bottom: 35px
       img
         padding-left: 20px
+        @media screen and (max-width: $width-container)
+          margin: 15px 0 0 0
+          position: relative
+          width: 240px
+          height: auto
   &_text
     display: flex
     transform: translateX(-50%)
     left: 50%
+    @media screen and (max-width: $width-container)
+      flex-direction: column
     &-green
       width: 50%
       color: $white
       padding-top: 100px
       padding-right: 125px
       padding-bottom: 100px
+      @media screen and (max-width: $width-container)
+        padding: 35px 15px 70px
+        width: 100%
     &-blue
       width: 50%
       color: $black
       padding-top: 100px
       padding-left: 125px
       padding-bottom: 100px
+      @media screen and (max-width: $width-container)
+        padding: 35px 15px 70px
+        width: 100%
       .text_title
         color: #2C303C
     .text_title
@@ -48,12 +77,18 @@
       line-height: 150%
       letter-spacing: 0.02em
       margin-bottom: 30px
+      @media screen and (max-width: $width-container)
+        font-size: 18px
     .text_desc
       @include font-family-Helvetica
       font-size: 16px
       line-height: 36px
+      @media screen and (max-width: $width-container)
+        font-size: 14px
   &_functional
     padding: 150px 0
+    @media screen and (max-width: $width-container)
+      padding: 70px 0 0
     h3
       @include font-family-Montserrat
       @include bold
@@ -64,20 +99,36 @@
       text-transform: uppercase
       color: $green
       margin-bottom: 100px
+      @media screen and (max-width: $width-container)
+        margin-bottom: 70px
     &-block
       margin-bottom: 50px
+      @media screen and (max-width: $width-container)
+        width: 100vw
+        flex-direction: column
+        margin-bottom: 70px
       &:nth-child(2n+1)
         display: flex
         flex-direction: row-reverse
+        @media screen and (max-width: $width-container)
+          flex-direction: row
         .project_functional-text
           padding-left: 100px
           max-width: 100%
+          @media screen and (max-width: $width-container)
+            padding-left: 0
         .project_functional-item
           display: flex
           justify-content: flex-end
+          @media screen and (max-width: $width-container)
+            justify-content: normal
     &-img
       width: 435px
       height: 500px
+      @media screen and (max-width: $width-container)
+        width: 100%
+        height: auto
+        margin-bottom: 55px
       img
         width: 100%
         height: 100%
@@ -92,32 +143,51 @@
       letter-spacing: 0.02em
       color: #2C303C
       margin-bottom: 20px
+      @media screen and (max-width: $width-container)
+        font-size: 18px
     &-desc
       @include font-family-Helvetica
       font-size: 16px
       line-height: 36px
       color: $black
+      @media screen and (max-width: $width-container)
+        font-size: 14px
   &_block
     background-color: $blue
     padding: 135px 0
+    @media screen and (max-width: $width-container)
+      overflow: scroll
+      padding: 70px 0
     &-box
       display: flex
       flex-direction: row
       flex-wrap: wrap
+      @media screen and (max-width: $width-container)
+        width: max-content
     &-item
       width: 320px
       height: 450px
       margin-right: 55px
+      @media screen and (max-width: $width-container)
+        margin-right: 20px
       &:nth-child(3n+3)
         margin-right: 0
+        @media screen and (max-width: $width-container)
+          margin-right: 20px
       &:nth-child(1n+4)
         margin-top: 50px
+        @media screen and (max-width: $width-container)
+          margin-right: 20px
       img
         width: 100%
         height: 100%
         object-fit: cover
+        @media screen and (max-width: $width-container)
+          object-fit: contain
   &_review
     padding: 100px 0
+    @media screen and (max-width: $width-container)
+      padding: 70px 0
     .container
       align-items: center
       display: flex
@@ -129,8 +199,20 @@
       display: flex
       text-align: center
       margin-bottom: 80px
+      @media screen and (max-width: $width-container)
+        font-size: 42px
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
       img
         margin-left: 50px
+        @media screen and (max-width: $width-container)
+          margin: 15px 0 0 0
+          position: relative
+          width: 175px
+          height: auto
     a
       @include font-family-Montserrat
       @include semi-bold
@@ -140,7 +222,9 @@
       text-transform: uppercase
       color: #222326
       position: relative
-      &::after 
+      @media screen and (max-width: $width-container)
+        transform: translateX(-25px)
+      &::after
         content: ''
         position: absolute
         width: 40px
@@ -153,6 +237,12 @@
       padding: 50px 50px 80px 50px
       background-color: $blue
       margin-bottom: 45px
+      @media screen and (max-width: $width-container)
+        padding: 50px 20px 80px
+        position: relative
+        margin-left: 15px
+        margin-right: 15px
+        width: 100%
       .item_top
         display: flex
         margin-bottom: 25px
@@ -162,6 +252,13 @@
           border-radius: 100%
           background-color: $blue
           margin-right: 30px
+          @media screen and (max-width: $width-container)
+            width: 90px
+            height: 90px
+            position: absolute
+            top: -50px
+            left: 50%
+            transform: translateX(-50%)
           img
             width: 100%
             height: 100%
@@ -171,6 +268,11 @@
           display: flex
           flex-direction: column
           margin-right: 15px
+          @media screen and (max-width: $width-container)
+            width: 100%
+            margin-top: 10px
+            margin-right: 0
+            text-align: center
           &-full
             @include font-family-Montserrat
             @include bold
@@ -184,6 +286,15 @@
             line-height: 18px
             letter-spacing: 0.02em
             color: $black
+      .item_social
+        @media screen and (max-width: $width-container)
+          position: absolute
+          top: 15px
+          left: 60%
+          transform: translateX(-50%)
+          img
+            background-color: #fff
+            border-radius: 50%
       .item_bottom
         max-width: 570px
         p
@@ -197,18 +308,38 @@
     background-position-y: -10px
     padding-top: 130px
     padding-bottom: 150px
+    @media screen and (max-width: $width-container)
+      padding-top: 70px
+      padding-bottom: 70px
     h2
       @include h2-title
       margin-bottom: 90px
       padding-left: 10%
+      @media screen and (max-width: $width-container)
+        font-size: 42px
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: row
+        justify-content: center
+        padding-left: 0
       img
         margin-left: 20px
+        @media screen and (max-width: $width-container)
+          margin: 0 0 0 5px
+          position: relative
+          width: 160px
+          height: auto
     &_slider
       padding-left: 10%
+      @media screen and (max-width: $width-container)
+        padding-left: calc(10% - 4vw)
       &-item
         background: no-repeat center
         background-size: cover
         padding: 50px
+        @media screen and (max-width: $width-container)
+          padding: 40px 25px
         .item_title
           @include font-family-Montserrat
           font-size: 22px
@@ -218,12 +349,16 @@
           color: $white
           max-width: 380px
           margin-bottom: 20px
+          @media screen and (max-width: $width-container)
+            font-size: 18px
         .item_desc
           @include font-family-Helvetica
           font-size: 14px
           line-height: 30px
           color: $white
           max-width: 280px
+          @media screen and (max-width: $width-container)
+            font-size: 14px
         button
           background-color: transparent
           border: none
@@ -231,5 +366,19 @@
           padding: 0
           position: absolute
           bottom: 65px
+          @media screen and (max-width: $width-container)
+            bottom: 25px
+.project-page
+  .slick-dots
+    width: 85vw
+    position: relative
+    margin-top: 50px
+    bottom: 0
+    li button:before
+      font-size: 45px
+    .slick-active
+      &:after
+        @media screen and (max-width: $width-container)
+          display: none
 
 
