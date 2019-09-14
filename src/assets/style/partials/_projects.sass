@@ -1,4 +1,5 @@
 .projects
+  z-index: 3
   &_top
     p
       text-transform: uppercase
@@ -6,13 +7,27 @@
       margin-bottom: 25px
       max-width: 450px
       line-height: 140%
+      @media screen and (max-width: $width-container)
+        text-align: center
     h1
       @include h2-title-white
       line-height: 120%
       margin-bottom: 25px
       max-width: 600px
+      @media screen and (max-width: $width-container)
+        font-size: 42px
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
       img
         padding-left: 20px
+        @media screen and (max-width: $width-container)
+          margin: 15px 0 0 0
+          position: relative
+          width: 170px
+          height: auto
   &_block
     display: flex
     flex-direction: column
@@ -23,9 +38,9 @@
     flex-direction: row
     height: 435px
     margin-bottom: 45px
-    @media screen and (max-width:640px)
-          flex-direction: column-reverse
-          height: 580px
+    @media screen and (max-width: 640px)
+      flex-direction: column-reverse
+      height: auto
     &:last-child
       margin-bottom: 0
     &:hover
@@ -56,7 +71,7 @@
       position: relative
       transition: .4s
       @media screen and (max-width: 640px)
-          width: 100%
+        width: 100%
       &::before
         content: ''
         position: absolute
@@ -93,8 +108,8 @@
       padding: 0
       position: absolute
       bottom: 65px
-      @media screen and (max-width:640px)
-          bottom: 25px
+      @media screen and (max-width: 640px)
+        bottom: 25px
       svg
         line, path
           transition: .4s
