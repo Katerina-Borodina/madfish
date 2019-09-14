@@ -94,359 +94,314 @@
   </head>
 </html>
 
-<body class="blog-page">
+<body class="article-page">
 
-  <section class="menu_nav">
-    <button class="menu_nav-close">
-      <img src="assets/img/close.svg" alt="close" />
-    </button>
-    <div class="menu_nav-page">
-      <a href="./index.html">
-        Main
-      </a>
-      <a href="./about.html">
-        About us
-      </a>
-      <a href="./projects.html">
-        Projects
-      </a>
-      <a href="./blog.html">
-        Blog
-      </a>
-      <a href="./contacts.html">
-        Contact us
-      </a>
-    </div>
-    <div class="menu_nav-link">
-        <a href="https://www.linkedin.com/company/18952791">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 10.9452V17.6H14.142V11.3909C14.142 9.83118 13.584 8.7667 12.1875 8.7667C11.1215 8.7667 10.4871 9.48408 10.208 10.178C10.1063 10.4261 10.0801 10.7714 10.0801 11.1187V17.6H6.22078C6.22078 17.6 6.27276 7.08391 6.22078 5.99437H10.0797V7.63942C10.0719 7.65172 10.0617 7.66499 10.0543 7.67691H10.0797V7.63942C10.5924 6.84977 11.508 5.72172 13.5574 5.72172C16.0965 5.72168 18 7.38045 18 10.9452ZM2.18381 0.399902C0.863556 0.399902 0 1.26589 0 2.40468C0 3.51866 0.838572 4.41093 2.13259 4.41093H2.15837C3.50419 4.41093 4.34117 3.51883 4.34117 2.40468C4.31581 1.26589 3.50419 0.399902 2.18381 0.399902ZM0.229207 17.6H4.08702V5.99437H0.229207V17.6Z" fill="white"/>
-          </svg>
-      </a>
-      <a href="https://www.facebook.com/MadFishSolutions-113688753341031">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
-                  <path d="M13.499 0.00374516L11.1648 0C8.54241 0 6.84772 1.73869 6.84772 4.42978V6.4722H4.50082C4.29801 6.4722 4.13379 6.63661 4.13379 6.83941V9.79865C4.13379 10.0014 4.2982 10.1657 4.50082 10.1657H6.84772V17.6328C6.84772 17.8356 7.01195 17.9998 7.21475 17.9998H10.2768C10.4796 17.9998 10.6438 17.8354 10.6438 17.6328V10.1657H13.3879C13.5907 10.1657 13.7549 10.0014 13.7549 9.79865L13.7561 6.83941C13.7561 6.74204 13.7173 6.64878 13.6486 6.57987C13.5798 6.51096 13.4862 6.4722 13.3888 6.4722H10.6438V4.74081C10.6438 3.90864 10.8421 3.48618 11.9262 3.48618L13.4986 3.48562C13.7012 3.48562 13.8654 3.32121 13.8654 3.11859V0.370771C13.8654 0.168345 13.7014 0.00411968 13.499 0.00374516Z" fill="white"/>
-              </g>
-              <defs>
-                  <clipPath id="clip0">
-                      <rect width="18" height="17.9998" fill="white"/>
-                  </clipPath>
-              </defs>
-          </svg>
-      </a>
-      <!-- <a href="#">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.0325 0H4.96721C2.22829 0 0 2.2284 0 4.96732V13.0326C0 15.7716 2.22829 17.9999 4.96721 17.9999H13.0325C15.7716 17.9999 17.9999 15.7715 17.9999 13.0326V4.96732C18 2.2284 15.7716 0 13.0325 0ZM16.403 13.0326C16.403 14.891 14.891 16.4029 13.0326 16.4029H4.96721C3.1089 16.403 1.59704 14.891 1.59704 13.0326V4.96732C1.59704 3.10901 3.1089 1.59704 4.96721 1.59704H13.0325C14.8909 1.59704 16.4029 3.10901 16.4029 4.96732V13.0326H16.403Z" fill="#78B539"/>
-              <path d="M9.00042 4.36206C6.44293 4.36206 4.3623 6.44268 4.3623 9.00018C4.3623 11.5576 6.44293 13.6381 9.00042 13.6381C11.5579 13.6381 13.6385 11.5576 13.6385 9.00018C13.6385 6.44268 11.5579 4.36206 9.00042 4.36206ZM9.00042 12.0409C7.32364 12.0409 5.95934 10.6769 5.95934 9.00007C5.95934 7.32318 7.32353 5.95899 9.00042 5.95899C10.6773 5.95899 12.0415 7.32318 12.0415 9.00007C12.0415 10.6769 10.6772 12.0409 9.00042 12.0409Z" fill="#78B539"/>
-              <path d="M13.8323 3.00781C13.5246 3.00781 13.2223 3.13238 13.005 3.35064C12.7867 3.56784 12.6611 3.87021 12.6611 4.17897C12.6611 4.48678 12.7868 4.78904 13.005 5.0073C13.2222 5.2245 13.5246 5.35013 13.8323 5.35013C14.141 5.35013 14.4424 5.2245 14.6606 5.0073C14.8789 4.78904 15.0034 4.48667 15.0034 4.17897C15.0034 3.87021 14.8789 3.56784 14.6606 3.35064C14.4434 3.13238 14.141 3.00781 13.8323 3.00781Z" fill="#78B539"/>
-          </svg>
-  
-      </a> -->
-      <a href="https://github.com/madfish-solutions">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.4786 12.8686C13.8629 12.8686 14.1814 13.0586 14.4586 13.4343C14.7329 13.8129 14.8786 14.2743 14.8786 14.8271C14.8786 15.3771 14.7329 15.8429 14.4586 16.2171C14.1829 16.5957 13.8629 16.7829 13.4786 16.7829C13.0814 16.7829 12.7329 16.5957 12.4571 16.2171C12.1829 15.8429 12.0371 15.3771 12.0371 14.8271C12.0371 14.2743 12.1829 13.8129 12.4571 13.4343C12.7314 13.0571 13.08 12.8686 13.4786 12.8686ZM18.3929 7.78429C19.4586 8.94286 20 10.3486 20 12.0029C20 13.0714 19.8771 14.0357 19.63 14.8929C19.38 15.7457 19.0671 16.4414 18.6957 16.9771C18.3186 17.5143 17.8557 17.9843 17.3043 18.39C16.7529 18.7986 16.2457 19.0929 15.7829 19.28C15.3186 19.4686 14.79 19.6129 14.1957 19.7171C13.6 19.8186 13.1586 19.8757 12.8486 19.8929C12.5443 19.9057 12.2229 19.9129 11.87 19.9129C11.7914 19.9129 11.5229 19.9186 11.0886 19.9343C10.6586 19.9529 10.2886 19.9571 10 19.9571C9.71143 19.9571 9.34143 19.9529 8.91143 19.9343C8.47714 19.9186 8.20857 19.9129 8.13 19.9129C7.77857 19.9129 7.45571 19.9057 7.15143 19.8929C6.84 19.8757 6.4 19.8186 5.80429 19.7171C5.2 19.6143 4.68143 19.4686 4.21714 19.28C3.75429 19.0929 3.24571 18.7986 2.69714 18.39C2.14429 17.9843 1.68143 17.5143 1.30429 16.9771C0.931429 16.4414 0.62 15.7457 0.37 14.8929C0.122857 14.0357 0 13.0714 0 12.0029C0 10.3486 0.541429 8.94143 1.60714 7.78429C1.49 7.72571 1.48571 7.14571 1.59571 6.04571C1.68571 4.94429 1.92 3.92857 2.30286 3C3.63714 3.14143 5.28857 3.89857 7.26143 5.25857C7.92714 5.08857 8.83429 4.99714 10 4.99714C11.2171 4.99714 12.13 5.08857 12.74 5.26C13.6386 4.65286 14.4971 4.15857 15.3186 3.78286C16.1529 3.41 16.7543 3.18857 17.1314 3.13L17.6971 3.00143C18.0829 3.92857 18.3171 4.94429 18.4057 6.04714C18.5143 7.14571 18.51 7.72571 18.3929 7.78429ZM10.0429 18.9557C12.4543 18.9557 14.2629 18.6671 15.5014 18.0886C16.7229 17.5114 17.3471 16.32 17.3471 14.5229C17.3471 13.48 16.9571 12.6086 16.1729 11.9114C15.7757 11.5357 15.2971 11.3043 14.76 11.2171C14.2243 11.13 13.4043 11.13 12.3029 11.2171C11.2043 11.3057 10.4486 11.3457 10.0429 11.3457C9.49286 11.3457 8.9 11.32 8.15857 11.2614C7.41571 11.2043 6.83286 11.1686 6.41143 11.15C5.99143 11.1371 5.54143 11.1886 5.04286 11.3043C4.55 11.4214 4.14429 11.6243 3.82429 11.9114C3.08 12.5814 2.69571 13.45 2.69571 14.5229C2.69571 16.32 3.30429 17.5114 4.52429 18.0886C5.73857 18.6671 7.54286 18.9557 9.95571 18.9557H10.0429ZM6.56571 12.8686C6.94857 12.8686 7.26857 13.0586 7.54429 13.4343C7.81857 13.8129 7.96429 14.2743 7.96429 14.8271C7.96429 15.3771 7.81857 15.8429 7.54429 16.2171C7.27 16.5957 6.94857 16.7829 6.56571 16.7829C6.16714 16.7829 5.82 16.5957 5.54286 16.2171C5.26857 15.8429 5.12286 15.3771 5.12286 14.8271C5.12286 14.2743 5.26857 13.8129 5.54286 13.4343C5.81857 13.0571 6.16571 12.8686 6.56571 12.8686Z" fill="white"/>
-          </svg>
-      </a>
-    </div>
-  </section>
-
-
-  <div class="wrap">
-    <header class="header" style="padding: 100px 0 200px 0">
-  <div class="container align-items-center">
-    <div class="header_top">
-      <div class="header_left">
-        <a href="./index.html">
-          <img src="assets/img/logo-white.svg" alt="logo" />
-        </a>
-      </div>
-      <div class="header_right">
-        <a class="header_right-link" href="#">
-          CONTACT US
-        </a>
-        <button class="header_right-btn">
-          <img src="assets/img/btn-menu.svg" alt="open menu" />
-        </button>
-      </div>
-    </div>
-    <div class="thankyou">
-      <div class="thankyou_img">
-        <img src="assets/img/confetti.svg" alt="confetti" />
-      </div>
-      <h1 class="thankyou_title">Thank you!</h1>
-      <p class="thankyou_desc">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore
-      </p>
-      <a class="thankyou_btn" href="#">home</a>
-    </div>
-    <div class="error_404">
-      <h1 class="error_404_title">ERROR</h1>
-      <p class="error_404_desc">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore
-      </p>
-      <a class="error_404_btn" href="#">home</a>
-    </div>
-    <div class="about-h">
-      <div class="about_text">
-        <p>WE ARE MADFISH</p>
-        <h1>
-          Professional tech team-building service for
-          <img src="assets/img/your_business.svg" alt="your business" />
-        </h1>
-      </div>
-    </div>
-    <div class="project-h">
-      <div class="project_top">
-        <h1>
-          Reimagining Mobile for
-          <img src="assets/img/Wyndham.svg" alt="Wyndham" />
-        </h1>
-        <p>
-          The mobile-first reimagining of Wyndham's reward program for 7,500+
-          properties.
-        </p>
-      </div>
-    </div>
-    <div class="projects-h">
-      <div class="projects_top">
-        <p>CASE STUDIES</p>
-        <h1>Some of our finest <img src="assets/img/work.svg" alt="work" /></h1>
-      </div>
-    </div>
-    <!-- <div class="blog-h">
-            <div class="blog_top align-items-center">
-                <div class="blog_top-left">
-                    <div class="link">
-                        <a href="#">Latest</a>
-                        <a href="#">Insights</a>
-                        <a href="#">Tech</a>
-                        <a href="#">Design</a>
-                        <a href="#">Marketing</a>
-                    </div>
-                    <a href="#"><img src="assets/img/search.svg" alt="search"></a>
-                </div>
-                <div class="blog_top-right">
-                    <a href="#">subscribe</a>
-                </div>
-            </div>
-        </div> -->
+<section class="menu_nav">
+  <button class="menu_nav-close">
+    <img src="assets/img/close.svg" alt="close" />
+  </button>
+  <div class="menu_nav-page">
+    <a href="./index.html">
+      Main
+    </a>
+    <a href="./about.html">
+      About us
+    </a>
+    <a href="./projects.html">
+      Projects
+    </a>
+    <a href="./blog.html">
+      Blog
+    </a>
+    <a href="./contacts.html">
+      Contact us
+    </a>
   </div>
-</header>
+  <div class="menu_nav-link">
+      <a href="https://www.linkedin.com/company/18952791">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 10.9452V17.6H14.142V11.3909C14.142 9.83118 13.584 8.7667 12.1875 8.7667C11.1215 8.7667 10.4871 9.48408 10.208 10.178C10.1063 10.4261 10.0801 10.7714 10.0801 11.1187V17.6H6.22078C6.22078 17.6 6.27276 7.08391 6.22078 5.99437H10.0797V7.63942C10.0719 7.65172 10.0617 7.66499 10.0543 7.67691H10.0797V7.63942C10.5924 6.84977 11.508 5.72172 13.5574 5.72172C16.0965 5.72168 18 7.38045 18 10.9452ZM2.18381 0.399902C0.863556 0.399902 0 1.26589 0 2.40468C0 3.51866 0.838572 4.41093 2.13259 4.41093H2.15837C3.50419 4.41093 4.34117 3.51883 4.34117 2.40468C4.31581 1.26589 3.50419 0.399902 2.18381 0.399902ZM0.229207 17.6H4.08702V5.99437H0.229207V17.6Z" fill="white"/>
+        </svg>
+    </a>
+    <a href="https://www.facebook.com/MadFishSolutions-113688753341031">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+                <path d="M13.499 0.00374516L11.1648 0C8.54241 0 6.84772 1.73869 6.84772 4.42978V6.4722H4.50082C4.29801 6.4722 4.13379 6.63661 4.13379 6.83941V9.79865C4.13379 10.0014 4.2982 10.1657 4.50082 10.1657H6.84772V17.6328C6.84772 17.8356 7.01195 17.9998 7.21475 17.9998H10.2768C10.4796 17.9998 10.6438 17.8354 10.6438 17.6328V10.1657H13.3879C13.5907 10.1657 13.7549 10.0014 13.7549 9.79865L13.7561 6.83941C13.7561 6.74204 13.7173 6.64878 13.6486 6.57987C13.5798 6.51096 13.4862 6.4722 13.3888 6.4722H10.6438V4.74081C10.6438 3.90864 10.8421 3.48618 11.9262 3.48618L13.4986 3.48562C13.7012 3.48562 13.8654 3.32121 13.8654 3.11859V0.370771C13.8654 0.168345 13.7014 0.00411968 13.499 0.00374516Z" fill="white"/>
+            </g>
+            <defs>
+                <clipPath id="clip0">
+                    <rect width="18" height="17.9998" fill="white"/>
+                </clipPath>
+            </defs>
+        </svg>
+    </a>
+    <!-- <a href="#">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.0325 0H4.96721C2.22829 0 0 2.2284 0 4.96732V13.0326C0 15.7716 2.22829 17.9999 4.96721 17.9999H13.0325C15.7716 17.9999 17.9999 15.7715 17.9999 13.0326V4.96732C18 2.2284 15.7716 0 13.0325 0ZM16.403 13.0326C16.403 14.891 14.891 16.4029 13.0326 16.4029H4.96721C3.1089 16.403 1.59704 14.891 1.59704 13.0326V4.96732C1.59704 3.10901 3.1089 1.59704 4.96721 1.59704H13.0325C14.8909 1.59704 16.4029 3.10901 16.4029 4.96732V13.0326H16.403Z" fill="#78B539"/>
+            <path d="M9.00042 4.36206C6.44293 4.36206 4.3623 6.44268 4.3623 9.00018C4.3623 11.5576 6.44293 13.6381 9.00042 13.6381C11.5579 13.6381 13.6385 11.5576 13.6385 9.00018C13.6385 6.44268 11.5579 4.36206 9.00042 4.36206ZM9.00042 12.0409C7.32364 12.0409 5.95934 10.6769 5.95934 9.00007C5.95934 7.32318 7.32353 5.95899 9.00042 5.95899C10.6773 5.95899 12.0415 7.32318 12.0415 9.00007C12.0415 10.6769 10.6772 12.0409 9.00042 12.0409Z" fill="#78B539"/>
+            <path d="M13.8323 3.00781C13.5246 3.00781 13.2223 3.13238 13.005 3.35064C12.7867 3.56784 12.6611 3.87021 12.6611 4.17897C12.6611 4.48678 12.7868 4.78904 13.005 5.0073C13.2222 5.2245 13.5246 5.35013 13.8323 5.35013C14.141 5.35013 14.4424 5.2245 14.6606 5.0073C14.8789 4.78904 15.0034 4.48667 15.0034 4.17897C15.0034 3.87021 14.8789 3.56784 14.6606 3.35064C14.4434 3.13238 14.141 3.00781 13.8323 3.00781Z" fill="#78B539"/>
+        </svg>
 
-    <section class="header_bottom" style="position: relative;top: -120px">
-      <div class="container">
-        <div class="header_bottom-text">
-          <p>15.09.2019</p>
-          <h1 style="font-size: 50px">
-            Best advises not to get stuck in design system
-          </h1>
-        </div>
-      </div>
-    </section>
-    <div class="blog-p">
-      <div class="container">
-        <h1 class="subtitle">Best advises not to get stuck in design system</h1>
-        <p class="paragraph">
-          Nowadays we may see, how important design is. More and more, both
-          sharks of business world and small start ups trying to involve their
-          costumer thanks to designing. Still, many designers don’t know the
-          perfect way of working with different systems that’s why this list may
-          be amazingly useful for those, who is interested in high-quality
-          product.
-        </p>
-        <h1 class="subtitle">Design as a A class fuel for project</h1>
+    </a> -->
+    <a href="https://github.com/madfish-solutions">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.4786 12.8686C13.8629 12.8686 14.1814 13.0586 14.4586 13.4343C14.7329 13.8129 14.8786 14.2743 14.8786 14.8271C14.8786 15.3771 14.7329 15.8429 14.4586 16.2171C14.1829 16.5957 13.8629 16.7829 13.4786 16.7829C13.0814 16.7829 12.7329 16.5957 12.4571 16.2171C12.1829 15.8429 12.0371 15.3771 12.0371 14.8271C12.0371 14.2743 12.1829 13.8129 12.4571 13.4343C12.7314 13.0571 13.08 12.8686 13.4786 12.8686ZM18.3929 7.78429C19.4586 8.94286 20 10.3486 20 12.0029C20 13.0714 19.8771 14.0357 19.63 14.8929C19.38 15.7457 19.0671 16.4414 18.6957 16.9771C18.3186 17.5143 17.8557 17.9843 17.3043 18.39C16.7529 18.7986 16.2457 19.0929 15.7829 19.28C15.3186 19.4686 14.79 19.6129 14.1957 19.7171C13.6 19.8186 13.1586 19.8757 12.8486 19.8929C12.5443 19.9057 12.2229 19.9129 11.87 19.9129C11.7914 19.9129 11.5229 19.9186 11.0886 19.9343C10.6586 19.9529 10.2886 19.9571 10 19.9571C9.71143 19.9571 9.34143 19.9529 8.91143 19.9343C8.47714 19.9186 8.20857 19.9129 8.13 19.9129C7.77857 19.9129 7.45571 19.9057 7.15143 19.8929C6.84 19.8757 6.4 19.8186 5.80429 19.7171C5.2 19.6143 4.68143 19.4686 4.21714 19.28C3.75429 19.0929 3.24571 18.7986 2.69714 18.39C2.14429 17.9843 1.68143 17.5143 1.30429 16.9771C0.931429 16.4414 0.62 15.7457 0.37 14.8929C0.122857 14.0357 0 13.0714 0 12.0029C0 10.3486 0.541429 8.94143 1.60714 7.78429C1.49 7.72571 1.48571 7.14571 1.59571 6.04571C1.68571 4.94429 1.92 3.92857 2.30286 3C3.63714 3.14143 5.28857 3.89857 7.26143 5.25857C7.92714 5.08857 8.83429 4.99714 10 4.99714C11.2171 4.99714 12.13 5.08857 12.74 5.26C13.6386 4.65286 14.4971 4.15857 15.3186 3.78286C16.1529 3.41 16.7543 3.18857 17.1314 3.13L17.6971 3.00143C18.0829 3.92857 18.3171 4.94429 18.4057 6.04714C18.5143 7.14571 18.51 7.72571 18.3929 7.78429ZM10.0429 18.9557C12.4543 18.9557 14.2629 18.6671 15.5014 18.0886C16.7229 17.5114 17.3471 16.32 17.3471 14.5229C17.3471 13.48 16.9571 12.6086 16.1729 11.9114C15.7757 11.5357 15.2971 11.3043 14.76 11.2171C14.2243 11.13 13.4043 11.13 12.3029 11.2171C11.2043 11.3057 10.4486 11.3457 10.0429 11.3457C9.49286 11.3457 8.9 11.32 8.15857 11.2614C7.41571 11.2043 6.83286 11.1686 6.41143 11.15C5.99143 11.1371 5.54143 11.1886 5.04286 11.3043C4.55 11.4214 4.14429 11.6243 3.82429 11.9114C3.08 12.5814 2.69571 13.45 2.69571 14.5229C2.69571 16.32 3.30429 17.5114 4.52429 18.0886C5.73857 18.6671 7.54286 18.9557 9.95571 18.9557H10.0429ZM6.56571 12.8686C6.94857 12.8686 7.26857 13.0586 7.54429 13.4343C7.81857 13.8129 7.96429 14.2743 7.96429 14.8271C7.96429 15.3771 7.81857 15.8429 7.54429 16.2171C7.27 16.5957 6.94857 16.7829 6.56571 16.7829C6.16714 16.7829 5.82 16.5957 5.54286 16.2171C5.26857 15.8429 5.12286 15.3771 5.12286 14.8271C5.12286 14.2743 5.26857 13.8129 5.54286 13.4343C5.81857 13.0571 6.16571 12.8686 6.56571 12.8686Z" fill="white"/>
+        </svg>
+    </a>
+  </div>
+</section>
 
-        <p class="paragraph">
-          At first glance benefits of creating a design system are obvious and
-          clear. It’s pretty easy to connect a design system to cost savings,
-          scalability, efficiency, and consistency. Somehow, even seeing such
-          benefits from design systems, many, fail to provide necessary
-          resources for a successful system. Most likely it happens because
-          teams feel pressure while launching some features, and those
-          resources, spent on the design system, shall decrease velocity on the
-          product that pays the bills. If you really want to make savings thanks
-          to a design system then it can not be treated as an secondary
-          something, not like just useless background. As the company grew, and
-          teams began developing product, future customers ask for concrete UI
-          themes, and, basically, thats how new product lines were born. From
-          the start the design system was looked as a saving favor, it drives
-          across these new teams and products, and allows to quickly theme our
-          UI. And soon leaders understood that without devoted developers, the
-          design system would never become something more than sketches of
-          symbols. For those, who thinks about design system only as about many
-          symbols, must be explained that it has its own unique set of end
-          users, who have their own unique problems and contexts of use. Each
-          step crave pensive systems and capable guidance between stakeholders.
-          For a design system to be successful, there's a rule -- you must have
-          a team whose only job is to work only on it.
-        </p>
-
-        <h1 class="subtitle">The way to successes is team</h1>
-        <p class="paragraph">
-          The easiest way to build system is if you have support from the people
-          who are sitting in expensive chairs in offices. But the hardest part
-          is to get your c-level team to ideal of idea, especially because of
-          given resources, needed to build a helpful and pracious design system.
-          All you need to get started on that kind of a design system is one
-          designer and one developer who are passionate enough to work, improve
-          and work again.
-        </p>
-        <h1 class="subtitle">
-          Work with team as a good leader not selfish boss
-        </h1>
-        <p class="paragraph">
-          ...As stated above, there is an obvious benefit to the design system,
-          but even picking up the right one, the team does not always want to
-          use it. Some of the designers may have formed some behavior earlier
-          and used the opposite design systems before, so expect that the
-          pressure through the "in-house tool" will not flow successfully and
-          may even impair the performance of the future product. The design
-          system should not only add value to the company, but also simplify
-          lives of the people who do the work. Otherwise, the team will copy
-          inconsistent elements from random corners of one product, create
-          incomprehensible designs, complicate the array of one design system
-          with another. To facilitate the work of the team, it is necessary to
-          involve it in the construction of the design system. It is advisable
-          to talk to each project creator and find out which systems they have
-          used before, or how their experience will help in creating a new one.
-          The workflow of the team should be understood. After that, the work
-          will begin to go on its own with completely smaller and simpler
-          problems. Just because the design system is primarily an internal tool
-          it doesn't mean that you do not have to confirm it. A design system is
-          completive archive of various data so don't mess up with it Although
-          many design systems show a whole library of UI components and branding
-          guidelines, a true design system includes so much more. In case of an
-          absence of integration of design system with the products it supports,
-          then its value becomes severely limited. Many teams are trying to
-          create an upgrade of design so that changes may apply to all products,
-          including the library of items. However, thi s is completely
-          impossible for now, and then you have to make manual adjustments. Yes,
-          in the case of a widespread element change in the product, again, it
-          is necessary to check the integrity of all layouts. Some changes may
-          be accidental, or involuntarily missed items. The design system should
-          outline a clear process for introducing new components and models to
-          change existing ones. And this process must match the size, culture
-          and maturity of your business. Small teams can get along with
-          unofficial, impromptu weakened messages, while larger teams may need
-          official reviews and change requests. Use new components and new ways
-          of doing things Once your design system will reach the point which
-          will look like a critical mass with a large enough amount of
-          components possibly satisfying to solve most, if not all, design
-          problems. At the same time, design systems make reusable
-          components too readily accessible. One design teams can use or imitate
-          existing components without solving how a new component might work on
-          the design problem. Teams also tend to overplay the importance of
-          usage of a basic easier solution because it is similar to an existing
-          pattern which most probably was used before, and not for once.
-          Designers must constantly ask themselves if a new component will be
-          able to solve the problem better — whether we are okay with
-          simply satisfying the users’ needs. To become one of the best in A
-          list company must developing without stop, delighting users in ways
-          that competitors can't. Don't make empty discussions, system always
-          works The hardest thing is to convince people to adopt your design
-          system. But at the same time for some systems, the biggest challenge
-          is to get stakeholders to consensus on design principles and how
-          components work.Often teams tend to overthink how a component should
-          function, creating unbelievable and useless scenarios. Worst part is
-          clinging to small parts of work that suppose to be thought almost in
-          the end of any project. Spending time on unplanned steps will decline
-          productivity of each doer and stakeholder and financial looses as
-          well. The main point of a design system is to make difficult
-          components easier, simplified. So instead of having too many
-          conversations about a hypothetical future, making new hard components,
-          remind everyone that you can talk and discuss the design system any
-          other time.Choose the responsible person for project management Do not
-          expect that each member of your team will be perfectly aware and
-          remember about their accurate role in the project, so it’s best to
-          appoint a responsible person who perfectly knows about each change and
-          new idea, will constantly remind and motivate doer to take the right
-          actions. Do not be afraid that design might start changing, because an
-          important element of each design is the synergy between each from
-          stuff who involved in project. In ideal, you should make "change
-          notification”, about which the responsible designer will know and be
-          able to explain new tasks and manage the project with adjustments.
-          Make from novice professionals When hiring new employees, don't think
-          that they have necessarily worked in any design system. Not to spoil
-          all the further work, better to let the freshers importance of their
-          being in current position, and after that YOU, having got a perfectly
-          adapted to your style of work professional, shall only see the
-          incredible advantages of this process. Do not be afraid to type in a
-          professional vocabulary and create it in the workplace and staple of
-          everyday communication, as this will most likely lead to quick
-          understanding and better work. A nice bonus will be an improvement of
-          professional skills and work experience. Make curves not flatness
-          Although design systems are newsworthy, we should warn you! In case if
-          you are small company with less than five products and a little
-          costumers, then you’d better to wait for development and only after
-          start creating design systems. Big companies are most likely to get
-          more benefits from designing, for small it is inappropriate. Design
-          systems suppose to make everyt hing easier so there’s no meaning to
-          simplify already onefold things. ...
-        </p>
-         <div class="blog-p_block" style="text-align: center; padding-top:50px">
-          <div class="blog-p_item" style="margin-bottom: 170px;">
-                        <a href="./article-1.html">
-
-            <div class="blog-p_item-img">
-              <img src="assets/img/image8.jpg" alt="" />
-            </div>
-            <div class="blog-p_item-plash">
-              <div class="plash_top align-items-center">
-                <p class="plash_top-left">Tech</p>
-                <p class="plash_top-right">7 min read</p>
-              </div>
-              <div class="plash_center">
-              Best advises not to get stuck in design system
-              </div>
-              <div class="plash_bottom align-items-center">
-                <div class="plash_bottom-left align-items-center">
-                  <div class="plash_img">
-                    <img src="assets/img/img-small-1.png" alt="" />
-                  </div>
-                  <!-- <span class="plash_name">Yuriy Buts</span> -->
-                </div>
-                <span class="plash_bottom-right">15.09.2019</span>
-              </div>
-            </div>
+<div class="wrap">
+    <header class="header">
+      <div class="container align-items-center">
+        <div class="header_top">
+          <div class="header_left">
+            <a href="./index.html">
+              <img src="assets/img/logo-white.svg" alt="logo" />
             </a>
           </div>
-          <div class="blog-p_item" style="margin-bottom: 170px;">
-                        <a href="./article-2.html">
-
-            <div class="blog-p_item-img">
-              <img src="assets/img/image8.jpg" alt="" />
-            </div>
-            <div class="blog-p_item-plash">
-              <div class="plash_top align-items-center">
-                <p class="plash_top-left">Tech</p>
-                <p class="plash_top-right">7 min read</p>
-              </div>
-              <div class="plash_center">
-Outsourcing vs in-house projects              </div>
-              <div class="plash_bottom align-items-center">
-                <div class="plash_bottom-left align-items-center">
-                  <div class="plash_img">
-                    <img src="assets/img/img-small-1.png" alt="" />
-                  </div>
-                  <!-- <span class="plash_name">Yuriy Buts</span> -->
-                </div>
-                <span class="plash_bottom-right">15.09.2019</span>
-              </div>
-            </div>
+          <div class="header_right">
+            <a class="header_right-link" href="/contacts.html">
+              CONTACT US
             </a>
+            <button class="header_right-btn">
+              <img src="assets/img/btn-menu.svg" alt="open menu" />
+            </button>
           </div>
-          
+        </div>
+        <div class="thankyou">
+          <div class="thankyou_img">
+            <img src="assets/img/confetti.svg" alt="confetti" />
+          </div>
+          <h1 class="thankyou_title">Thank you!</h1>
+          <p class="thankyou_desc">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+            illo inventore
+          </p>
+          <a class="thankyou_btn" href="https://madfish.solutions">home</a>
+        </div>
+        <div class="error_404">
+          <h1 class="error_404_title">ERROR</h1>
+          <p class="error_404_desc">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+            illo inventore
+          </p>
+          <a class="error_404_btn" href="#">home</a>
+        </div>
+        <div class="about-h">
+          <div class="about_text">
+            <p>WE ARE MADFISH</p>
+            <h1>
+              Professional tech team-building service for
+              <img src="assets/img/your_business.svg" alt="your business" />
+            </h1>
+          </div>
+        </div>
+        <div class="project-h">
+          <div class="project_top">
+            <h1>
+              Reimagining Mobile for
+              <img src="assets/img/Wyndham.svg" alt="Wyndham" />
+            </h1>
+            <p>
+              The mobile-first reimagining of Wyndham's reward program for 7,500+
+              properties.
+            </p>
+          </div>
+        </div>
+        <div class="projects-h">
+          <div class="projects_top">
+            <p>CASE STUDIES</p>
+            <h1>Some of our finest <img src="assets/img/work.svg" alt="work" /></h1>
+          </div>
+        </div>
+        <div class="blog-h">
+          <div class="blog_top align-items-center">
+            <div class="blog_top-left">
+              <div class="link">
+                <a href="#">Latest</a>
+                <a href="#">Insights</a>
+                <a href="#">Tech</a>
+                <a href="#">Design</a>
+                <a href="#">Marketing</a>
+              </div>
+              <a href="#"><img src="assets/img/search.svg" alt="search"/></a>
+            </div>
+            <div class="blog_top-right">
+              <a href="#">subscribe</a>
+            </div>
+          </div>
+        </div>
+        <div class="article-h">
+          <a class="back" href="#">back</a>
+          <div class="blog_top align-items-center">
+            <div class="blog_top-left">
+              <div class="link">
+                <a href="#">Latest</a>
+                <a href="#">Insights</a>
+                <a href="#">Tech</a>
+                <a href="#">Design</a>
+                <a href="#">Marketing</a>
+              </div>
+              <a href="#"><img src="assets/img/search.svg" alt="search"/></a>
+            </div>
+            <div class="blog_top-right">
+              <a href="#">subscribe</a>
+            </div>
+          </div>
+          <div class="article_bottom">
+            <p class="article_bottom-date">15.09.2019</p>
+            <h2>How to Create UI Animations That Meet Users’ Needs</h2>
+            <div class="article_bottom-person">
+              <div class="article_bottom-img">
+                <img src="assets/img/img-small-2.png" alt="">
+              </div>
+              <div class="article_bottom-name ">
+                <p>Vita Sporevaya</p>
+                <span>UX/UI Designer</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-     
-      </div>
+    </header>
+
+    <div class="article-p">
+        <div class="container">
+            <h3 class="article_title">What’s the ColorMatchTab animation about?</h3>
+            <p class="article_paragraph">
+                There are multiple ways to organize navigation in apps: tab bars, side menus, Tinder-like swipes between
+                screens. An issue with most existing solutions, however, is that they are inconvenient for phones with
+                large screens. Users have to constantly stretch their thumbs to the icon to go to the next screen.
+            </p>
+            <p class="article_paragraph">We
+              decided to share the user interface animation concept we created that solves this problem of in-app
+              navigation on large screens. This animation was developed to illustrate a concept we developed for a
+              review app. The review app would show users interesting places around them and let them.</p>
+            <div class="article_img">
+              <img src="assets/img/image5.jpg" alt="">
+            </div>
+
+            <h3 class="article_title">What’s the ColorMatchTab animation about?</h3>
+            <p class="article_paragraph">
+                There are multiple ways to organize navigation in apps: tab bars, side menus, Tinder-like swipes between
+                screens. An issue with most existing solutions, however, is that they are inconvenient for phones with
+                large screens. Users have to constantly stretch their thumbs to the icon to go to the next screen.
+            </p>
+            <p class="article_paragraph">We
+                decided to share the user interface animation concept we created that solves this problem of in-app
+                navigation on large screens. This animation was developed to illustrate a concept we developed for a
+                review app. The review app would show users interesting places around them and let them.</p>
+
+            <div class="article-block">
+                <img src="assets/img/functional1.jpg" alt="">
+                <img src="assets/img/functional2.jpg" alt="">
+            </div>
+        </div>
+        <div class="article_also">
+            <div class="container">
+                <h2>Read also</h2>
+                <div class="article_slider">
+                    <a href="./article-2.html">
+                        <div class="blog-p_item-img">
+                            <img src="assets/img/image8.jpg" alt=""/>
+                        </div>
+                        <div class="blog-p_item-plash">
+                            <div class="plash_top align-items-center">
+                                <p class="plash_top-left">Tech</p>
+                                <p class="plash_top-right">7 min read</p>
+                            </div>
+                            <div class="plash_center">
+                                Outsourcing vs in-house projects
+                            </div>
+                            <div class="plash_bottom align-items-center">
+                                <div class="plash_bottom-left align-items-center">
+                                    <div class="plash_img">
+                                        <img src="assets/img/img-small-1.png" alt="" />
+                                    </div>
+                                    <span class="plash_name">Yuriy Buts</span>
+                                </div>
+                                <span class="plash_bottom-right">15.09.2019</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-2.html">
+                        <div class="blog-p_item-img">
+                            <img src="assets/img/image8.jpg" alt=""/>
+                        </div>
+                        <div class="blog-p_item-plash">
+                            <div class="plash_top align-items-center">
+                                <p class="plash_top-left">Tech</p>
+                                <p class="plash_top-right">7 min read</p>
+                            </div>
+                            <div class="plash_center">
+                                Outsourcing vs in-house projects
+                            </div>
+                            <div class="plash_bottom align-items-center">
+                                <div class="plash_bottom-left align-items-center">
+                                    <div class="plash_img">
+                                        <img src="assets/img/img-small-1.png" alt="" />
+                                    </div>
+                                    <span class="plash_name">Yuriy Buts</span>
+                                </div>
+                                <span class="plash_bottom-right">15.09.2019</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-2.html">
+                        <div class="blog-p_item-img">
+                            <img src="assets/img/image8.jpg" alt=""/>
+                        </div>
+                        <div class="blog-p_item-plash">
+                            <div class="plash_top align-items-center">
+                                <p class="plash_top-left">Tech</p>
+                                <p class="plash_top-right">7 min read</p>
+                            </div>
+                            <div class="plash_center">
+                                Outsourcing vs in-house projects
+                            </div>
+                            <div class="plash_bottom align-items-center">
+                                <div class="plash_bottom-left align-items-center">
+                                    <div class="plash_img">
+                                        <img src="assets/img/img-small-1.png" alt="" />
+                                    </div>
+                                    <span class="plash_name">Yuriy Buts</span>
+                                </div>
+                                <span class="plash_bottom-right">15.09.2019</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-2.html">
+                        <div class="blog-p_item-img">
+                            <img src="assets/img/image8.jpg" alt=""/>
+                        </div>
+                        <div class="blog-p_item-plash">
+                            <div class="plash_top align-items-center">
+                                <p class="plash_top-left">Tech</p>
+                                <p class="plash_top-right">7 min read</p>
+                            </div>
+                            <div class="plash_center">
+                                Outsourcing vs in-house projects
+                            </div>
+                            <div class="plash_bottom align-items-center">
+                                <div class="plash_bottom-left align-items-center">
+                                    <div class="plash_img">
+                                        <img src="assets/img/img-small-1.png" alt="" />
+                                    </div>
+                                    <span class="plash_name">Yuriy Buts</span>
+                                </div>
+                                <span class="plash_bottom-right">15.09.2019</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </div>
-    
+
 
     <footer class="footer">
             <div class="container">
@@ -509,14 +464,13 @@ Outsourcing vs in-house projects              </div>
                 </div>
             </div>
         </footer>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>-->
-  <script src="assets/js/main.js"></script>
-  
-  </body>
-  </html>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>-->
+<script src="assets/js/main.js"></script>
+
 </body>
+</html>

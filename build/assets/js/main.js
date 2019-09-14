@@ -165,6 +165,29 @@ function projectPageBottomSlider() {
     });
 }
 
+function articlePageBottomSlider() {
+    $('.article_slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }],
+        prevArrow: '<div class="arrow-slider arrow-slider_left"></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right"></div>'
+    });
+}
+
 
 $(document).ready(function () {
     const BODY = $('body');
@@ -197,28 +220,11 @@ $(document).ready(function () {
 
     }
 
-    // if (BODY.hasClass('tennis-page')) {
-    //     tennisPageHeaderSlider();
-    //     tennisPageScrollToBlock();
-    // }
-    //
+    if (BODY.hasClass('article-page')) {
+        articlePageBottomSlider();
+    }
 
-    //
-    // if (BODY.hasClass('active-page')) {
-    //     activePageScrollToBlock();
-    //     aboutPagebottomSlider();
-    // }
-    //
-    // if (BODY.hasClass('reserv-page')) {
-    //     reservPageFormReservation();
-    //     popup();
-    //     popupForm();
-    //     MainPageFormReservation();
-    // }
-    //
-    // if (BODY.hasClass('test')) {
-    //     test();
-    // }
+
 });
 
 
