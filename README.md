@@ -13,3 +13,7 @@
 [project page](https://katerina-borodina.github.io/madfish/build/project.html)
 
 [projects page](https://katerina-borodina.github.io/madfish/build/projects.html)
+
+[blog page](https://katerina-borodina.github.io/madfish/build/blog.html)
+
+[article page](https://katerina-borodina.github.io/madfish/build/article-1.html)
