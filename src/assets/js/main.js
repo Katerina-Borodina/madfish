@@ -165,6 +165,29 @@ function projectPageBottomSlider() {
     });
 }
 
+function articlePageBottomSlider() {
+    $('.article_slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }],
+        prevArrow: '<div class="arrow-slider arrow-slider_left"></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right"></div>'
+    });
+}
+
 
 $(document).ready(function () {
     const BODY = $('body');
@@ -186,37 +209,22 @@ $(document).ready(function () {
         heightAbsolute();
         projectPageBottomSlider();
     }
-    //
-    // if (BODY.hasClass('restaurant-page')) {
-    //     restaurantPageScrollToBlock();
-    //     restaurantPageHeaderSlider();
-    //     restaurantPageTopLoopSlider();
-    //     restaurantPageBottomSlider();
-    //     restaurantPageBottomLoopSlider();
-    // }
-    //
-    // if (BODY.hasClass('tennis-page')) {
-    //     tennisPageHeaderSlider();
-    //     tennisPageScrollToBlock();
-    // }
-    //
 
-    //
-    // if (BODY.hasClass('active-page')) {
-    //     activePageScrollToBlock();
-    //     aboutPagebottomSlider();
-    // }
-    //
-    // if (BODY.hasClass('reserv-page')) {
-    //     reservPageFormReservation();
-    //     popup();
-    //     popupForm();
-    //     MainPageFormReservation();
-    // }
-    //
-    // if (BODY.hasClass('test')) {
-    //     test();
-    // }
+    if (BODY.hasClass('blog-page')) {
+        let items = $('.blog-p_item');
+
+        items.each(function (index, value) {
+            console.log('height', $(value).find('.blog-p_item-plash').height());
+            $(value).css("margin-bottom", $(value).find('.blog-p_item-plash').height() + 25);
+        })
+
+    }
+
+    if (BODY.hasClass('article-page')) {
+        articlePageBottomSlider();
+    }
+
+
 });
 
 
