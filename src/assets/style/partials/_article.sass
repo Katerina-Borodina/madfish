@@ -1,6 +1,8 @@
 .article
   &-p
     padding-top: 75px
+    @media screen and (max-width: $width-container)
+      padding-top: 90px
   &_bottom
     &-date
       @include font-family-Helvetica
@@ -18,6 +20,12 @@
       color: $white
       max-width: 680px
       margin-bottom: 30px
+      @media screen and (max-width: $width-container)
+        font-weight: 800
+        font-size: 22px
+        line-height: 34px
+        letter-spacing: 2px
+        margin-bottom: 60px
     &-person
       display: flex
       flex-direction: row
@@ -70,11 +78,16 @@
   &-block
     display: flex
     justify-content: space-between
+    @media screen and (max-width: $width-container)
+      display: none
   &_also
     background-color: $blue
     padding-top: 100px
     padding-bottom: 120px
     overflow: hidden
+    @media screen and (max-width: $width-container)
+      padding-top: 70px
+      padding-bottom: 90px
     h2
       @include font-family-Montserrat
       font-weight: 800
@@ -83,16 +96,53 @@
       letter-spacing: 2px
       color: $green
       margin-bottom: 50px
+      @media screen and (max-width: $width-container)
+        text-align: center
+        font-size: 42px
+        margin-bottom: 60px
   &_slider
     .slick-list
       overflow: visible !important
+    .slick-dots
+      @media screen and (max-width: $width-container)
+        position: relative
+    .slick-dots li button:before
+      @media screen and (max-width: $width-container)
+        font-size: 40px
     .slick-slide
       margin-right: 20px
       width: 560px
+      @media screen and (max-width: $width-container)
+        width: 80vw
+        height: auto
+        margin-right: 20px
+        img
+          width: 100%
+          height: max-content
+          object-fit: cover
+      .blog-p_item-img
+        @media screen and (max-width: $width-container)
+          height: 50vw
+          img
+            height: 100%
       .blog-p_item-plash
         position: inherit
         background-color: $white
         transform: translateY(-70px)
+        @media screen and (max-width: $width-container)
+          transform: translateY(0)
+          padding: 15px 22px
+        .plash_top
+          @media screen and (max-width: $width-container)
+            margin-bottom: 10px
+          &-left
+            @media screen and (max-width: $width-container)
+              font-size: 14px
+              margin-bottom: 0
+        .plash_center
+          @media screen and (max-width: $width-container)
+            font-size: 18px
+            line-height: 28px
     .arrow-slider_left
       top: -110px
       right: 90px
@@ -101,4 +151,6 @@
       top: -110px
       right: 0
       left: auto
+
+
 
