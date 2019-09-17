@@ -4064,7 +4064,8 @@ a {
     font-family: 'Helvetica', sans-serif;
     font-size: 14px;
     line-height: 1.49;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    color: #FFFFFF; }
     .footer_str:last-child, .footer_tell:last-child {
       margin-bottom: 0; }
   .footer_social {
