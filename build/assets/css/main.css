@@ -799,6 +799,9 @@
                   border-radius: 0;
                   outline: none; }
                 .blog-page header.header .container .blog-h .mobile .mobile-top-search form button {
+                  outline: none;
+                  background: transparent;
+                  border: none;
                   position: absolute;
                   top: 0;
                   right: 5px; }
