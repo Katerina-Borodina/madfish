@@ -4146,13 +4146,13 @@ a {
     font-weight: 700;
     letter-spacing: 0.91px;
     margin-bottom: 27px; }
-  .footer_str, .footer_tell {
+  .footer_str, .footer_tell, .footer_tell > a {
     font-family: 'Helvetica', sans-serif;
     font-size: 14px;
     line-height: 1.49;
     margin-bottom: 15px;
     color: inherit; }
-    .footer_str:last-child, .footer_tell:last-child {
+    .footer_str:last-child, .footer_tell:last-child, .footer_tell > a:last-child {
       margin-bottom: 0; }
   .footer_social {
     display: -webkit-box;
