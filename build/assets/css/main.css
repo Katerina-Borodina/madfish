@@ -819,6 +819,7 @@
               .blog-page header.header .container .blog-h .mobile .mobile-top-search form {
                 position: relative; }
                 .blog-page header.header .container .blog-h .mobile .mobile-top-search form input {
+                  padding: 0;
                   width: calc(100% - 35px);
                   background: transparent;
                   border: none;
@@ -2811,7 +2812,8 @@ a {
   position: absolute;
   display: block;
   top: 0;
-  padding-left: 10px; }
+  padding-left: 10px;
+  color: #78B539; }
 
 .blog-page .mobile-top-link .select {
   display: inline-block;
@@ -2822,7 +2824,7 @@ a {
   padding: 35px 0 18px;
   background: #37393E; }
   .blog-page .mobile-top-link .select input[name="list"]:not(:checked) ~ #text {
-    color: #FFFFFF;
+    color: #78B539;
     background: transparent; }
   .blog-page .mobile-top-link .select input[name="list"]:checked ~ #text {
     background: transparent;
@@ -2853,7 +2855,7 @@ a {
   display: none;
   padding-left: 10px;
   background: #37393E;
-  color: #FFFFFF; }
+  color: #78B539; }
   .blog-page .mobile-top-link .items label:hover {
     background: #eee;
     cursor: pointer; }
