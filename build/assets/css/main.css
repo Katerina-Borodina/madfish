@@ -910,6 +910,7 @@ body.menu-on {
     background: transparent; }
 
 .blog-page header.header {
+  min-height: 490px;
   background-position: top right;
   background-size: 100%;
   background-position-y: -20px;
@@ -3878,6 +3879,8 @@ a {
           @media screen and (max-width: 1100px) {
             .blog-p_top-plash .plash_bottom-left {
               font-size: 14px; } }
+          .blog-p_top-plash .plash_bottom-left .plash_name {
+            color: #000000; }
         .blog-p_top-plash .plash_bottom-right {
           color: #37393E;
           font-size: 14px;
