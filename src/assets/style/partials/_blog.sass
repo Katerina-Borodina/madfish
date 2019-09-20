@@ -7,7 +7,7 @@
   @media screen and (max-width: $width-container)
     width: 100%
     padding-bottom: 100px
-    padding-top: 90px
+    padding-top: 65px
     background-position-y: -10%
     background-position-x: 45%
   h2
@@ -18,16 +18,12 @@
       width: max-content
       font-size: 42px
       text-align: center
-      display: flex
-      align-items: center
-      flex-direction: row
-      justify-content: center
-    img
-      @media screen and (max-width: $width-container)
-        margin: 0 0 0 10px
-        position: relative
-        width: 100px
-        height: auto
+    span
+      color: $black-title
+      display: inline-block
+      -webkit-text-fill-color: transparent
+      -webkit-text-stroke-width: 2px
+      -webkit-text-stroke-color: #fff
   &_slider
     padding-left: 10%
     @media screen and (max-width: $width-container)
@@ -54,15 +50,15 @@
         color: $white
         max-width: 380px
         margin-top: 18px
-        @media screen and (max-width: $width-container)
-          margin-left: 50px
+        // @media screen and (max-width: $width-container)
+        //   margin-left: 50px
       .item_bottom
         color: $white
         display: flex
         margin-top: 10px
         position: relative
-        @media screen and (max-width: $width-container)
-          margin-left: 50px
+        // @media screen and (max-width: $width-container)
+        //   margin-left: 50px
         img
           width: 30px
           height: 30px

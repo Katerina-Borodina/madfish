@@ -2,7 +2,7 @@ function mainPageTopSlider() {
     $('.latest_slider').slick({
         dots: false,
         arrows: true,
-        infinite: true,
+        infinite: false,
         slidesToShow: 2,
         slidesToScroll: 2,
         responsive: [
@@ -14,27 +14,10 @@ function mainPageTopSlider() {
                     infinite: true,
                     dots: true
                 }
-            },
-            // {
-            //     breakpoint: 600,
-            //     settings: {
-            //         slidesToShow: 2,
-            //         slidesToScroll: 2
-            //     }
-            // },
-            // {
-            //     breakpoint: 480,
-            //     settings: {
-            //         slidesToShow: 1,
-            //         slidesToScroll: 1
-            //     }
-            // }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
+            }
         ],
-        prevArrow: '<div class="arrow-slider arrow-slider_left"></div>',
-        nextArrow: '<div class="arrow-slider arrow-slider_right"></div>'
+        prevArrow: '<div class="arrow-slider arrow-slider_left"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>'
     });
 }
 
@@ -56,28 +39,34 @@ function mainPageBottomSlider() {
                     dots: true
                 }
             }],
-        prevArrow: '<div class="arrow-slider arrow-slider_left-blog"></div>',
-        nextArrow: '<div class="arrow-slider arrow-slider_right-blog"></div>'
+        prevArrow: '<div class="arrow-slider arrow-slider_left-blog"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right-blog"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>'
     });
 }
 
 function navMunu() {
     let menu_mob = $(".menu_nav");
-    $(".header_right-btn").on('click', () => {
-        menu_mob.css("display", "block").css("right", 0).removeClass('menu-close').addClass('menu-open');
-        $('thml').css("overflow", 'hidden');
-        $('body').css("overflow", 'hidden');
-        // $(".wrap").css("z-index", "1");
-        // $(".menu_nav").css("z-index", "100");
+    $(".header_right-btn, .btn-butter").on('click', () => {
+        menu_mob.css("display", "block").removeClass('menu-close').addClass('menu-open');
+        $('html').css("overflow", 'hidden');
+        $('body').addClass('menu-on');
     });
 
     $(".menu_nav-close").on('click', () => {
-        menu_mob.css("right", '-100%').removeClass('menu-open').addClass('menu-close');
+        menu_mob.removeClass('menu-open').addClass('menu-close');
         setTimeout(function () {
             menu_mob.css("display", "none")
-        }, 600);
-        $('thml').css("overflow", 'auto');
-        $('body').css("overflow", 'auto');
+        }, 500);
+        $('html').css("overflow", 'auto');
+        $('body').removeClass('menu-on');
+    });
+
+    $('.file input[type="file"]').change((e) => {
+        let value = e.target.files[0].name;
+
+        setTimeout(() => {
+            $('.file span').html(value);
+        }, 2500);
     });
 }
 
@@ -107,8 +96,9 @@ function aboutPageTopSlider() {
                     dots: true
                 }
             }],
-        prevArrow: '<div class="arrow-slider arrow-slider_left"></div>',
-        nextArrow: '<div class="arrow-slider arrow-slider_right"></div>'
+        prevArrow: '<div class="arrow-slider arrow-slider_left"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>'
+    
     });
 }
 
@@ -132,8 +122,8 @@ function aboutPageBottomSlider() {
                     dots: true
                 }
             }],
-        prevArrow: '<div class="arrow-slider arrow-slider_left"></div>',
-        nextArrow: '<div class="arrow-slider arrow-slider_right"></div>'
+        prevArrow: '<div class="arrow-slider arrow-slider_left"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>'
     });
 }
 
@@ -160,8 +150,8 @@ function projectPageBottomSlider() {
                     dots: true
                 }
             }],
-        prevArrow: '<div class="arrow-slider arrow-slider_left-blog"></div>',
-        nextArrow: '<div class="arrow-slider arrow-slider_right-blog"></div>'
+        prevArrow: '<div class="arrow-slider arrow-slider_left-blog"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right-blog"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>'
     });
 }
 
@@ -183,8 +173,8 @@ function articlePageBottomSlider() {
                     dots: true
                 }
             }],
-        prevArrow: '<div class="arrow-slider arrow-slider_left"></div>',
-        nextArrow: '<div class="arrow-slider arrow-slider_right"></div>'
+        prevArrow: '<div class="arrow-slider arrow-slider_left"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>',
+        nextArrow: '<div class="arrow-slider arrow-slider_right"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" ><g clip-path="url(#clip0)" transform="rotate(0)"><path d="M14.4789 20.2837L16.7539 18.0087L9.27891 10.5337L16.7539 3.05869L14.4789 0.78369L4.7289 10.5337L14.4789 20.2837Z" fill="#fff" /></g><defs><clipPath id="clip0"><rect width="19.5" height="19.5" fill="white" transform="translate(20.4922 20.2837) rotate(180)"/></clipPath></defs></svg></div>'
     });
 }
 

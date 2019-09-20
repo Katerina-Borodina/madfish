@@ -11,20 +11,22 @@
     letter-spacing: 0.02em
     color: $white
     max-width: 450px
-    margin-bottom: 70px
+    margin-bottom: 90px
     @media screen and (max-width: $width-container)
       font-size: 42px
+      line-height: 50px
       text-align: center
       display: flex
       align-items: center
       flex-direction: column
       justify-content: center
-    img
-      @media screen and (max-width: $width-container)
-        margin: 15px 0 0 0
-        position: relative
-        width: 200px
-        height: auto
+      margin-bottom: 60px
+    span
+      color: $black-title
+      display: inline-block
+      -webkit-text-fill-color: transparent
+      -webkit-text-stroke-width: 2px
+      -webkit-text-stroke-color: #fff
   &_loc
     display: flex
     flex-direction: row
