@@ -68,6 +68,10 @@ function navMunu() {
             $('.file span').html(value);
         }, 2500);
     });
+
+    $('#nav-select').change((e) => {
+        window.location.href = e.target.value;
+    })
 }
 
 function mainPageScrollToBlock() {
