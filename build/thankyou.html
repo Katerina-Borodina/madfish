@@ -96,8 +96,11 @@
 <body class="thankyou-page">
 
 <section class="menu_nav">
+  <a class="logo" href="./index.html">
+    <img src="assets/img/logo_side.svg" alt="logo" />
+  </a>
   <button class="menu_nav-close">
-    <img src="assets/img/close.svg" alt="close" />
+    <span></span>
   </button>
   <div class="menu_nav-page">
     <a href="./index.html">
@@ -155,16 +158,18 @@
       <div class="container align-items-center">
         <div class="header_top">
           <div class="header_left">
-            <a href="./index.html">
-              <img src="assets/img/logo-white.svg" alt="logo" />
+            <a class="logo" href="./index.html">
+              <img src="assets/img/logo.svg" alt="logo" />
             </a>
           </div>
           <div class="header_right">
             <a class="header_right-link" href="/contacts.html">
               CONTACT US
             </a>
-            <button class="header_right-btn">
-              <img src="assets/img/btn-menu.svg" alt="open menu" />
+            <button class="btn-butter">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
           </div>
         </div>
@@ -193,16 +198,14 @@
           <div class="about_text">
             <p>WE ARE MADFISH</p>
             <h1>
-              Professional tech team-building service for
-              <img src="assets/img/your_business.svg" alt="your business" />
+              Professional tech team-building service for <span>your business</span>
             </h1>
           </div>
         </div>
         <div class="project-h">
           <div class="project_top">
             <h1>
-              Reimagining Mobile for
-              <img src="assets/img/Wyndham.svg" alt="Wyndham" />
+              Reimagining Mobile for <span>Wyndham</span>
             </h1>
             <p>
               The mobile-first reimagining of Wyndham's reward program for 7,500+
@@ -213,7 +216,7 @@
         <div class="projects-h">
           <div class="projects_top">
             <p>CASE STUDIES</p>
-            <h1>Some of our finest <img src="assets/img/work.svg" alt="work" /></h1>
+            <h1>Some of our finest <span>work</span></h1>
           </div>
         </div>
         <div class="blog-h">
@@ -234,45 +237,18 @@
           </div>
           <div class="mobile">
             <div class="mobile-top">
-              <div class="item mobile-top-link">
-    
-    <!--            <select name="" id="">-->
-    <!--              <option selected value="Latest">Latest</option>-->
-    <!--              <option value="Insights">Insights</option>-->
-    <!--              <option value="Tech">Tech</option>-->
-    <!--              <option value="Design">Design</option>-->
-    <!--              <option value="Marketing">Marketing</option>-->
-    <!--            </select>-->
-    
-                <label for="select" class="select">
-                  <input type="radio" name="list" value="not_changed" id="bg" checked />
-                  <input type="radio" name="list" value="not_changed" id="select">
-                  <label class="bg" for="bg"></label>
-                  <div class="items">
-                    <input type="radio" name="list" value="Latest" id="list[0]">
-                    <label for="list[0]">Latest</label>
-    
-                    <input type="radio" name="list" value="Insights" id="list[1]">
-                    <label for="list[1]">Insights</label>
-    
-                    <input type="radio" name="list" value="Tech" id="list[2]">
-                    <label for="list[2]">Tech</label>
-    
-                    <input type="radio" name="list" value="Design" id="list[3]">
-                    <label for="list[3]">Design</label>
-    
-                    <input type="radio" name="list" value="Marketing" id="list[4]">
-                    <label for="list[4]">Marketing</label>
-    
-                    <span id="text">Latest</span>
-                  </div>
-                </label>
-    
-    
+              <label class="item mobile-top-link">
+                <select id="nav-select" name="">
+                  <option selected value="blog.html">Latest</option>
+                  <option value="blog.html">Insights</option>
+                  <option value="blog.html">Tech</option>
+                  <option value="blog.html">Design</option>
+                  <option value="blog.html">Marketing</option>
+                </select>
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 7L7.5 13.5L14 7" stroke="white" stroke-width="2"/>
                 </svg>
-              </div>
+              </label>
               <div class="item mobile-top-search">
                 <form action="some.php">
                   <input type="text" name="search" placeholder="Search">

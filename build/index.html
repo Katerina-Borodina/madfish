@@ -96,8 +96,11 @@
 <body class="main-page">
 
 <section class="menu_nav">
+  <a class="logo" href="./index.html">
+    <img src="assets/img/logo_side.svg" alt="logo" />
+  </a>
   <button class="menu_nav-close">
-    <img src="assets/img/close.svg" alt="close" />
+    <span></span>
   </button>
   <div class="menu_nav-page">
     <a href="./index.html">
@@ -155,16 +158,18 @@
                 <div class="container align-items-center">
                     <div class="header_top">
                         <div class="header_left">
-                            <a href="#">
-                                <img src="assets/img/logo-white.svg" alt="logo">
+                            <a class="logo" href="#">
+                                <img src="assets/img/logo.svg" alt="logo">
                             </a>
                         </div>
                         <div class="header_right">
                             <a class="header_right-link" href="/contacts.html">
                                 CONTACT US
                             </a>
-                            <button class="header_right-btn">
-                                <img src="assets/img/btn-menu.svg" alt="open menu">
+                            <button class="btn-butter">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </button>
                         </div>
                     </div>
@@ -207,7 +212,8 @@
         <div class="container">
             <div class="header_bottom-text">
                 <p>WE ARE MADFISH</p>
-                <h1>Mad ideas <span>implemented</span> <img src="assets/img/wisely.svg" alt="wisely"></h1>
+                <h1>Mad ideas</h1>
+                <h2>implemented <span>wisely</span></h2>
                 <div class="scroll_block">
                     <a class="scroll-line scroll js-scroll-to-id-block" href="#">SCROLL</a>
                 </div>
@@ -218,7 +224,7 @@
     <section class="whatwe" id="this-block-id-to-scroll">
         <div class="container whatwe_bck">
             <div class="whatwe_left">
-                <h2>What we <img src="assets/img/do.svg" alt="do"></h2>
+                <h2>What we <span>do</span></h2>
             </div>
             <div class="whatwe_right">
                 <div class="whatwe_right-block">
@@ -259,7 +265,7 @@
 
     <section class="work">
         <div class="container">
-            <h2>We work <img src="assets/img/with.svg" alt="with"></h2>
+            <h2>We work <span>with</span></h2>
             <div class="work_block">
                 <div class="work_block-item">
                     <div class="item_img">
@@ -291,7 +297,7 @@
 
     <section class="latest">
         <div class="latest_slider-text">
-            <h2>Our latest <img src="assets/img/works.svg" alt="works"></h2>
+            <h2>Our latest <span>works</span></h2>
             <p>The hardest part of our business is finding real talent. And we know how to do it</p>
         </div>
         <div class="latest_slider">
@@ -409,7 +415,7 @@
     </section> -->
 
     <section class="blog">
-      <h2>Just a <img src="assets/img/blog.svg" alt="blog" /></h2>
+      <h2>Just a <span>blog</span></h2>
       <div class="blog_slider">
         <a class="blog_slider-item" href="./article-1.html">
           <img src="assets/img/img-index-1.jpg" alt="img1" />
@@ -462,15 +468,24 @@
 
     <section class="letsgo">
         <div class="container">
-            <h2>Let's get in touch and see how <img src="assets/img/we%20can%20help.svg" alt="we can help"></h2>
+            <h2>Let's get in touch and see how <span>we can help</span></h2>
             <form class="letsgo_form row" action="#">
                 <div class="letsgo_form-left col-lg-7 col-md-7 col-sm-12 col-12">
                     <div class="letsgo_form-left_top">
-                        <input type="text" name="full-name" placeholder="FULL NAME*">
-                        <input type="email" name="mail" placeholder="E-MAIL">
+                        <label>
+                            <span>FULL NAME*</span>
+                            <input type="text" name="full-name" />
+                        </label>
+                        <label>
+                            <span>E-MAIL</span>
+                            <input type="email" name="mail" />
+                        </label>
                     </div>
                     <div class="letsgo_form-left_bottom">
-                        <textarea name="comments" placeholder="TELL US ABOUT YOUR PROJECT"></textarea>
+                        <label>
+                            <span>TELL US ABOUT YOUR PROJECT</span>
+                            <textarea name="comments"></textarea>
+                        </label>
                     </div>
                 </div>
                 <div class="letsgo_form-right col-lg-5 col-md-5 col-sm-12 col-12">
@@ -483,7 +498,8 @@
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="file" for="upload-photo">Attach file
+                    <label class="file" for="upload-photo">
+                        <span>Attach file</span>
                         <input type="file" name="photo" id="upload-photo" />
                     </label>
                     <button type="submit">SEND</button>

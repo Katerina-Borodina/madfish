@@ -10,7 +10,7 @@
         <div class="container pos-rel">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <h2>Let’s work <img src="assets/img/together.svg" alt="together"></h2>
+                    <h2>Let’s work <span>together</span></h2>
                     <div class="contacts_loc">
                         <div>
                             <p class="contacts_location">Kyiv</p>
@@ -64,11 +64,20 @@
                     <form class="letsgo_form" action="#">
                         <div class="letsgo_form-left">
                             <div class="letsgo_form-left_top">
-                                <input type="text" name="full-name" placeholder="FULL NAME*">
-                                <input type="email" name="mail" placeholder="E-MAIL">
+                                <label>
+                                    <span>FULL NAME*</span>
+                                    <input type="text" name="full-name"  />
+                                </label>
+                                <label>
+                                    <span>E-MAIL</span>
+                                    <input type="email" name="mail" />
+                                </label>
                             </div>
                             <div class="letsgo_form-left_bottom">
-                                <textarea name="comments" placeholder="TELL US ABOUT YOUR PROJECT"></textarea>
+                                <label>
+                                    <span>TELL US ABOUT YOUR PROJECT</span>
+                                    <textarea name="comments"></textarea>
+                                </label>
                             </div>
                         </div>
                         <div class="letsgo_form-right">

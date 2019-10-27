@@ -89,6 +89,7 @@
         flex-direction: column
         align-items: center
         justify-content: center
+        margin-top: 40px
       h2
         @include h2-title
         max-width: 400px
@@ -99,14 +100,12 @@
           align-items: center
           flex-direction: column
           justify-content: center
-
-        img
-          padding-top: 15px
-          @media screen and (max-width: $width-container)
-            margin: 15px 0 0 0
-            position: relative
-            width: 145px
-            height: auto
+        span
+          color: $black-title
+          display: inline-block
+          -webkit-text-fill-color: white
+          -webkit-text-stroke-width: 2px
+          -webkit-text-stroke-color: black
       p
         @include font-family-Montserrat
         @include medium

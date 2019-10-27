@@ -14,13 +14,12 @@
         width: 100%
         font-size: 42px
         text-align: center
-      img
-        padding-left: 20px
-        @media screen and (max-width: $width-container)
-          width: 285px
-          height: auto
-          object-fit: contain
-          padding-left: 0
+      span
+        color: $black-title
+        display: inline-block
+        -webkit-text-fill-color: transparent
+        -webkit-text-stroke-width: 2px
+        -webkit-text-stroke-color: #fff
   &_slider-top
     .slick-list
       overflow: visible!important
@@ -46,11 +45,10 @@
     padding-bottom: 265px
     overflow: hidden
     @media screen and (max-width: $width-container)
-      padding-bottom: 95px
+      padding-bottom: 45px
     //margin-left: 10%
     h2
       @include h2-title
-      display: flex
       margin-bottom: 35px
       @media screen and (max-width: $width-container)
         font-size: 42px
@@ -59,13 +57,12 @@
         align-items: center
         flex-direction: column
         justify-content: center
-      img
-        margin-left: 20px
-        @media screen and (max-width: $width-container)
-          margin: 15px 0 0 0
-          position: relative
-          width: 115px
-          height: auto
+      span
+        color: $black-title
+        display: inline-block
+        -webkit-text-fill-color: white
+        -webkit-text-stroke-width: 2px
+        -webkit-text-stroke-color: black
     p
       @include font-family-Helvetica
       font-size: 16px
@@ -135,7 +132,7 @@
       background-size: inherit
       background-position-y: top
       background-position-x: center
-      padding: 95px 0
+      padding: 45px 0
     h2
       @include h2-title
       margin-bottom: 35px
@@ -160,12 +157,11 @@
       flex-wrap: wrap
       justify-content: flex-end
       @media screen and (max-width: $width-container)
-        margin-top: 70px
+        margin-top: 40px
         justify-content: space-between
     &-item
       width: 168px
       height: 137px
-      background-color: $white
       margin-bottom: 20px
       @media screen and (max-width: $width-container)
         width: calc(50% - 10px)
@@ -185,10 +181,9 @@
   &_offer
     padding: 105px 0
     @media screen and (max-width: $width-container)
-      padding: 95px 0
+      padding: 55px 0
     h2
       @include h2-title
-      max-width: 710px
       margin-bottom: 135px
       @media screen and (max-width: $width-container)
         font-size: 40px
@@ -197,15 +192,13 @@
         align-items: center
         flex-direction: column
         justify-content: center
-        margin-bottom: 50px
-      img
-        position: absolute
-        margin-left: 30px
-        @media screen and (max-width: $width-container)
-          margin: 15px 0 0 0
-          position: relative
-          width: 278px
-          height: auto
+        margin-bottom: 40px
+      span
+        color: $black-title
+        display: inline-block
+        -webkit-text-fill-color: white
+        -webkit-text-stroke-width: 2px
+        -webkit-text-stroke-color: black
     &-block
       display: flex
       flex-direction: row
@@ -214,9 +207,12 @@
         flex-direction: column
     &-item
       width: 548px
-      padding: 30px 35px
+      padding-top: 30px
+      padding-bottom: 30px
+      padding-right: 35px
+      padding-left: 55px
       background-color: $blue
-      height: 605px
+      // height: 605px
       margin-right: 20px
       @media screen and (max-width: $width-container)
         padding: 30px 20px
@@ -314,12 +310,12 @@
         align-items: center
         flex-direction: column
         justify-content: center
-      img
-        @media screen and (max-width: $width-container)
-          margin: 15px 0 0 0
-          position: relative
-          width: 226px
-          height: auto
+      span
+        color: $black-title
+        display: inline-block
+        -webkit-text-fill-color: white
+        -webkit-text-stroke-width: 3px
+        -webkit-text-stroke-color: black
     a
       @include font-family-Montserrat
       @include bold
@@ -331,11 +327,14 @@
       display: inline-block
       background-color: $green
       text-transform: uppercase
+      min-width: 240px
+      text-align: center
       @media screen and (max-width: $width-container)
         padding: 18px 88px
         display: block
         width: max-content
         margin: 0 auto
+
   &_technology
     padding: 145px 0
     @media screen and (max-width: $width-container)
@@ -352,12 +351,12 @@
         align-items: center
         flex-direction: column
         justify-content: center
-      img
-        @media screen and (max-width: $width-container)
-          margin: 15px 0 0 0
-          position: relative
-          width: 123px
-          height: auto
+      span
+        color: $black-title
+        display: inline-block
+        -webkit-text-fill-color: white
+        -webkit-text-stroke-width: 3px
+        -webkit-text-stroke-color: black
     p
       @include font-family-Helvetica
       font-size: 16px
@@ -377,7 +376,7 @@
     &-item
       width: 168px
       height: 137px
-      background-color: $blue
+      // background-color: $blue
       margin-bottom: 20px
       @media screen and (max-width: $width-container)
         width: calc(50% - 10px)

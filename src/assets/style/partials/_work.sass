@@ -5,6 +5,8 @@
   padding-bottom: 130px
   @media screen and (max-width: $width-container)
     width: 100%
+    padding-top: 60px
+    padding-bottom: 50px
     background: $blue url(../img/line-blue.svg) no-repeat 60% -34%
   h2
     @include h2-title
@@ -16,14 +18,13 @@
       align-items: center
       flex-direction: column
       justify-content: center
-    img
-      position: absolute
-      margin-left: 30px
-      @media screen and (max-width: $width-container)
-        margin: 15px 0 0 0
-        position: relative
-        width: 115px
-        height: auto
+    span
+      color: $black-title
+      display: inline-block
+      -webkit-text-fill-color: white
+      -webkit-text-stroke-width: 2px
+      -webkit-text-stroke-color: black
+      
   &_block
     display: flex
     flex-direction: row

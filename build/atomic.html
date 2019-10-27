@@ -96,8 +96,11 @@
 <body class="project-page">
 
 <section class="menu_nav">
+  <a class="logo" href="./index.html">
+    <img src="assets/img/logo_side.svg" alt="logo" />
+  </a>
   <button class="menu_nav-close">
-    <img src="assets/img/close.svg" alt="close" />
+    <span></span>
   </button>
   <div class="menu_nav-page">
     <a href="./index.html">
@@ -256,7 +259,7 @@
     </div> -->
 
     <div class="project_more">
-        <h2>More <img src="assets/img/projects.svg" alt="projects"></h2>
+        <h2>More <span>projects</span></h2>
         <div class="project_more_slider">
             <a class="project_more_slider-item" href="/cwallet.html" style="background-image: url(assets/img/cw1.png)">
                 <p class="item_title">Cryptocurrency Wallet</p>
@@ -283,15 +286,24 @@
 
     <section class="letsgo">
         <div class="container">
-            <h2>Let's get in touch and see how <img src="assets/img/we%20can%20help.svg" alt="we can help"></h2>
+            <h2>Let's get in touch and see how <span>we can help</span></h2>
             <form class="letsgo_form row" action="#">
                 <div class="letsgo_form-left col-lg-7 col-md-7 col-sm-12 col-12">
                     <div class="letsgo_form-left_top">
-                        <input type="text" name="full-name" placeholder="FULL NAME*">
-                        <input type="email" name="mail" placeholder="E-MAIL">
+                        <label>
+                            <span>FULL NAME*</span>
+                            <input type="text" name="full-name" />
+                        </label>
+                        <label>
+                            <span>E-MAIL</span>
+                            <input type="email" name="mail" />
+                        </label>
                     </div>
                     <div class="letsgo_form-left_bottom">
-                        <textarea name="comments" placeholder="TELL US ABOUT YOUR PROJECT"></textarea>
+                        <label>
+                            <span>TELL US ABOUT YOUR PROJECT</span>
+                            <textarea name="comments"></textarea>
+                        </label>
                     </div>
                 </div>
                 <div class="letsgo_form-right col-lg-5 col-md-5 col-sm-12 col-12">
@@ -304,7 +316,8 @@
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="file" for="upload-photo">Attach file
+                    <label class="file" for="upload-photo">
+                        <span>Attach file</span>
                         <input type="file" name="photo" id="upload-photo" />
                     </label>
                     <button type="submit">SEND</button>
